@@ -96,8 +96,8 @@ window.PRZYPADKI = {
    sg:["kobiet|a","kobiet|y","kobie|cie","kobiet|ę","kobiet|ą","kobie|cie","kobiet|o"],
    pl:["kobiet|y","kobiet|","kobiet|om","kobiet|y","kobiet|ami","kobiet|ach","kobiet|y"]},
   "ziemia":{label:"żeński miękki — ziemia",note:"Rodzaj żeński z tematem miękkim: końcówka -i w dopełniaczu, celowniku i miejscowniku.",
-   sg:["ziemi|a","ziemi|","ziemi|","ziemi|ę","ziemi|ą","ziemi|","ziemi|o"],
-   pl:["ziemi|e","zie|m","ziemi|om","ziemi|e","ziemi|ami","ziemi|ach","ziemi|e"]},
+   sg:["ziem|ia","ziem|i","ziem|i","ziem|ię","ziem|ią","ziem|i","ziem|io"],
+   pl:["ziem|ie","ziem|","ziem|iom","ziem|ie","ziem|iami","ziem|iach","ziem|ie"]},
   "noc":{label:"żeński spółgłoskowy — noc",note:"Rodzaj żeński zakończony na spółgłoskę: mianownik = biernik.",
    sg:["noc|","noc|y","noc|y","noc|","noc|ą","noc|y","noc|y"],
    pl:["noc|e","noc|y","noc|om","noc|e","noc|ami","noc|ach","noc|e"]},
@@ -131,8 +131,8 @@ window.PRZYPADKI = {
   "Biernik rodzaju męskiego: rzeczowniki żywotne mają formę jak dopełniacz (*widzę kot[[a]]*), nieżywotne jak mianownik (*widzę stół*).",
   "W liczbie mnogiej rzeczowniki męskoosobowe mają biernik równy dopełniaczowi (*widzę student[[ów]]*), pozostałe — równy mianownikowi (*widzę kot[[y]]*).",
   "Przeczenie zmienia biernik w dopełniacz: *mam kota → nie mam kot[[a]]; czytam książkę → nie czytam książk[[i]]*.",
-  "W miejscowniku i celowniku często zachodzą oboczności: *kot → kocie, ręka → ręce, noga → nodze, stół → stole*.",
+  "W miejscowniku (i wołaczu) zachodzą oboczności: *kot → o kocie, stół → o stole*. Rzeczowniki żeńskie mają je w celowniku i miejscowniku: *ręka → ręce, noga → nodze*.",
   "Dopełniacz liczby pojedynczej rodzaju męskiego nieżywotnego ma końcówkę -a albo -u i trzeba się jej nauczyć ze słowem (*stołu, domu, zeszytu*, ale *ołówka, noża*).",
-  "Wołacz w mowie potocznej często zastępuje mianownik (*Ania!, Pan Marek!*), ale w piśmie formalnym używa się go zawsze (*Szanowny Panie!*)."
+  "W mowie potocznej mianownik często zastępuje wołacz (*Ania!, Pan Marek!* zamiast *Aniu!, Panie Marku!*), ale w piśmie i w sytuacjach formalnych używa się wołacza (*Szanowny Panie!*)."
  ]
 };

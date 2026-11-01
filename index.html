@@ -253,14 +253,19 @@ tbody tr:last-child>*{border-bottom:0}
   .match{gap:.5rem .75rem}
   .mi{font-size:1.05rem;padding:.6rem .5rem}
   .zoom span{display:none}
+  .bar-in{flex-wrap:wrap;gap:.4rem .75rem}
+  .crumb{order:5;flex-basis:100%}
+  .crumb:empty{display:none}
+  .navg{margin-left:auto}
   .dlg li{grid-template-columns:1fr;gap:.1rem}
 }
+@media (max-width:420px){.brand .bt{display:none}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <header class="bar"><div class="bar-in">
-  <a class="brand" href="#spis"><i>PL</i> Polski na tablicy</a>
+  <a class="brand" href="#spis"><i>PL</i> <span class="bt">Polski na tablicy</span></a>
   <a class="navg" href="#gramatyka">Gramatyka</a>
   <span class="crumb" id="crumb"></span>
   <div class="zoom" role="group" aria-label="Wielkość tekstu">
@@ -331,6 +336,7 @@ function route(){
   navToken++;keyHandler=null;
   let h="";try{h=decodeURIComponent(location.hash.slice(1))}catch(e){h=""}
   let m;
+  if(!/^(g\d+|gramatyka)$/.test(h))try{sessionStorage.removeItem("pnt-gy")}catch(e){}
   if(h==="gramatyka")return grammar();
   if(h==="przypadki")return cases();
   if((m=h.match(/^g(\d+)$/)))return grammarItem(+m[1]);
@@ -442,22 +448,30 @@ function grammar(){
   for(const gr of GRAMATYKA){
     h+=`<section class="band"><h2><i class="m g">G</i>${esc(gr.temat)}</h2>${gr.opis?`<p class="gsrc" style="margin:-.4rem 0 .85rem">${esc(gr.opis)}</p>`:""}<div class="cards">${gr.pozycje.map(p=>{const c=chap(p.r),i=n++;return`<a class="card sk-g" href="#g${i}"><span class="ty">Zasada</span><span class="ct">${fmt(p.t)}</span><span class="cn">${c?esc(label(c)):""}</span></a>`}).join("")}</div></section>`;
   }
-  app.innerHTML=h;window.scrollTo(0,0);
+  app.innerHTML=h;
+  /* powrót z zasady: wracamy w to samo miejsce listy */
+  let y=0;try{y=+sessionStorage.getItem("pnt-gy")||0;sessionStorage.removeItem("pnt-gy")}catch(e){}
+  $$(".band .card",app).forEach(a=>a.addEventListener("click",()=>{try{sessionStorage.setItem("pnt-gy",String(window.scrollY))}catch(e){}}));
+  window.scrollTo(0,y);
 }
 function grammarItem(g){
-  const p=GLIST[g];if(!p){location.hash="gramatyka";return}
-  const c=chap(p.r);if(!c||!GOT.has(p.r)){location.hash="gramatyka";return}
+  const p=GLIST[g];if(!p){location.replace("#gramatyka");return}
+  const c=chap(p.r);
+  /* gdy zasady nie da się otworzyć, zostawiamy strzałki, żeby można było iść dalej */
+  const fail=msg=>{app.innerHTML=`<div class="act-nav"><a class="back" href="#gramatyka">← Gramatyka</a><div class="act-pager">${g>0?`<a href="#g${g-1}" aria-label="Poprzednia zasada">‹</a>`:`<span class="ph">‹</span>`}<span>${g+1} / ${GLIST.length}</span>${g<GLIST.length-1?`<a href="#g${g+1}" aria-label="Następna zasada">›</a>`:`<span class="ph">›</span>`}</div></div><p class="empty">${msg}</p>`};
+  if(!c||!GOT.has(p.r))return fail("Ta zasada nie jest jeszcze dostępna.");
   const t=navToken;
   app.innerHTML=`<p class="loading">Wczytywanie…</p>`;
   loadChapter(p.r).then(R=>{
     if(t!==navToken)return;
     const i=R.cwiczenia.findIndex(a=>a.typ==="zasada"&&a.tytul===p.t);
-    if(i<0){app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a><p class="empty">Nie znaleziono tej zasady w rozdziale.</p>`;return}
+    if(i<0){console.warn("Gramatyka: brak zasady",p.r,p.t);return fail("Nie znaleziono tej zasady w rozdziale.")}
     activity(c,R,i,g);
-  }).catch(()=>{if(t===navToken)app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a><p class="empty">Nie udało się wczytać zasady. Odśwież stronę i spróbuj jeszcze raz.</p>`});
+  }).catch(()=>{if(t===navToken)fail("Nie udało się wczytać zasady. Odśwież stronę i spróbuj jeszcze raz.")});
 }
 function cases(){
   const P=window.PRZYPADKI;
+  if(!P){setCrumb("Gramatyka");app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a><p class="empty">Nie udało się wczytać tabel. Odśwież stronę i spróbuj jeszcze raz.</p>`;return}
   setCrumb("Gramatyka › Siedem przypadków");document.title="Siedem przypadków · Polski na tablicy";
   const form=f=>f.split(" / ").map(x=>{const [s,e]=x.split("|");return esc(s)+(e?`<b class="e">${esc(e)}</b>`:"")}).join(" / ");
   const rh=i=>`<th scope="row">${P.przypadki[i][0]}<br><small class="gsrc">${P.przypadki[i][1]}</small></th>`;
