@@ -50,6 +50,11 @@ h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:
 .brand{font-family:var(--f-display);font-weight:800;font-size:1.05rem;text-decoration:none;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
 .brand i{font-style:normal;background:var(--accent);color:var(--accent-ink);border-radius:3px;padding:0 .35rem;font-size:.85rem}
 .crumb{color:var(--muted);font-size:.9rem;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.navg{text-decoration:none;font-weight:700;font-size:.95rem;color:var(--g);border:1px solid var(--line);border-radius:6px;padding:.25rem .65rem;white-space:nowrap}
+.navg:hover{border-color:var(--g)}
+.gsrc{color:var(--muted);font-size:.95rem}
+.gsrc a{color:inherit}
+.g-top{margin-bottom:2.25rem}
 .zoom{display:flex;align-items:center;gap:.25rem;font-size:.8rem;color:var(--muted)}
 .zoom button{border:1px solid var(--line);background:var(--bg);border-radius:6px;min-width:2.1rem;height:2rem;cursor:pointer;font-weight:700}
 .zoom span{min-width:2.8rem;text-align:center;font-variant-numeric:tabular-nums}
@@ -256,6 +261,7 @@ tbody tr:last-child>*{border-bottom:0}
 <body>
 <header class="bar"><div class="bar-in">
   <a class="brand" href="#spis"><i>PL</i> Polski na tablicy</a>
+  <a class="navg" href="#gramatyka">Gramatyka</a>
   <span class="crumb" id="crumb"></span>
   <div class="zoom" role="group" aria-label="Wielkość tekstu">
     <button type="button" id="zOut" aria-label="Mniejszy tekst">A−</button><span id="zVal">100%</span><button type="button" id="zIn" aria-label="Większy tekst">A+</button>
@@ -264,6 +270,7 @@ tbody tr:last-child>*{border-bottom:0}
 <main id="app"><p class="loading">Wczytywanie…</p></main>
 
 <script src="spis.js"></script>
+<script src="gramatyka.js"></script>
 <script>
 (function(){
 "use strict";
@@ -288,6 +295,8 @@ const plain=s=>norm(s).replace(PL,c=>PLMAP[c]);
 const bare=s=>norm(s).replace(/[.,!?;:…–-]/g," ").replace(/\s+/g," ").trim();
 
 const SPIS=window.SPIS||[], GOT=new Set(window.GOTOWE||[]);
+const GRAMATYKA=window.GRAMATYKA||[];
+const GLIST=GRAMATYKA.flatMap(gr=>gr.pozycje.map(p=>({...p,temat:gr.temat})));
 window.ROZ=window.ROZ||{};
 const TYP={zasada:"Zasada",fiszki:"Fiszki",quiz:"Quiz",luki:"Uzupełnij",pary:"Dopasuj",rozsypanka:"Rozsypanka",scenka:"Scenka",rozmowa:"Rozmowa"};
 const SEK={K:"Komunikacja",L:"Leksyka",G:"Gramatyka"};
@@ -322,6 +331,9 @@ function route(){
   navToken++;keyHandler=null;
   let h="";try{h=decodeURIComponent(location.hash.slice(1))}catch(e){h=""}
   let m;
+  if(h==="gramatyka")return grammar();
+  if(h==="przypadki")return cases();
+  if((m=h.match(/^g(\d+)$/)))return grammarItem(+m[1]);
   if((m=h.match(/^r([a-z0-9]+)-(\d+)$/)))return open(m[1],+m[2]);
   if((m=h.match(/^r([a-z0-9]+)$/)))return open(m[1],null);
   home();
@@ -335,6 +347,10 @@ function home(){
   <p class="lede">Materiały do zajęć online ułożone według spisu treści podręcznika: zasady gramatyczne, fiszki, quizy, ćwiczenia z lukami i scenki. Wybierz rozdział, udostępnij ekran i ćwiczcie razem.</p>
   <div class="meter"><div class="meter-bar"><span style="width:${(nDone/SPIS.length*100).toFixed(1)}%"></span></div>
   <span>Omówione rozdziały: <b>${nDone}</b> z ${SPIS.length} · materiały gotowe dla ${nReady} ${plural(nReady,"rozdziału","rozdziałów","rozdziałów")}</span></div></div>
+  <div class="cards g-top">
+   <a class="card sk-g" href="#przypadki"><span class="ty">Gramatyka · tabele</span><span class="ct">Siedem przypadków</span><span class="cn">pytania, wzory odmiany rzeczowników, przymiotników i zaimków</span></a>
+   <a class="card sk-g" href="#gramatyka"><span class="ty">Gramatyka · zasady</span><span class="ct">Wszystkie zasady gramatyczne</span><span class="cn">${GLIST.length} ${plural(GLIST.length,"zasada","zasady","zasad")} z całej książki, ułożone tematami</span></a>
+  </div>
   <div class="toc-head"><span></span><span>Rozdział</span><span><i class="m k">K</i>Komunikacja</span><span><i class="m l">L</i>Leksyka</span><span><i class="m g">G</i>Gramatyka</span></div><ol class="toc">`;
   for(const c of SPIS){
     const ok=GOT.has(c.id), tag=ok?"a":"div";
@@ -394,17 +410,82 @@ function chapter(c,R){
   window.scrollTo(0,0);
 }
 
-function activity(c,R,i){
+function activity(c,R,i,g){
   const acts=R.cwiczenia,a=acts[i];
   if(!a){location.hash="r"+c.id;return}
-  setCrumb(label(c)+" › "+a.tytul.replace(/[\[\]*]/g,""));document.title=a.tytul.replace(/[\[\]*]/g,"")+" · Polski na tablicy";
+  setCrumb((g?"Gramatyka":label(c))+" › "+a.tytul.replace(/[\[\]*]/g,""));document.title=a.tytul.replace(/[\[\]*]/g,"")+" · Polski na tablicy";
   const k=a.sekcja.toLowerCase();
+  /* g = pozycja w dziale „Gramatyka”: wtedy strzałki przechodzą po kolejnych zasadach, a nie po ćwiczeniach rozdziału */
+  const back=g!=null?`<a class="back" href="#gramatyka">← Gramatyka</a>`:`<a class="back" href="#r${c.id}">← ${esc(label(c))}</a>`;
+  const pager=g!=null
+    ?`${g>0?`<a href="#g${g-1}" aria-label="Poprzednia zasada">‹</a>`:`<span class="ph">‹</span>`}<span>${g+1} / ${GLIST.length}</span>${g<GLIST.length-1?`<a href="#g${g+1}" aria-label="Następna zasada">›</a>`:`<span class="ph">›</span>`}`
+    :`${i>0?`<a href="#r${c.id}-${i-1}" aria-label="Poprzednie ćwiczenie">‹</a>`:`<span class="ph">‹</span>`}<span>${i+1} / ${acts.length}</span>${i<acts.length-1?`<a href="#r${c.id}-${i+1}" aria-label="Następne ćwiczenie">›</a>`:`<span class="ph">›</span>`}`;
   app.innerHTML=`<div class="act sk-${k}">
-   <div class="act-nav"><a class="back" href="#r${c.id}">← ${esc(label(c))}</a>
-    <div class="act-pager">${i>0?`<a href="#r${c.id}-${i-1}" aria-label="Poprzednie ćwiczenie">‹</a>`:`<span class="ph">‹</span>`}<span>${i+1} / ${acts.length}</span>${i<acts.length-1?`<a href="#r${c.id}-${i+1}" aria-label="Następne ćwiczenie">›</a>`:`<span class="ph">›</span>`}</div></div>
-   <header class="act-head"><span class="tag">${SEK[a.sekcja]} · ${TYP[a.typ]}</span><h1>${fmt(a.tytul)}</h1>${a.polecenie?`<p class="instr">${fmt(a.polecenie)}</p>`:""}</header>
+   <div class="act-nav">${back}
+    <div class="act-pager">${pager}</div></div>
+   <header class="act-head"><span class="tag">${g!=null?esc(GLIST[g].temat):SEK[a.sekcja]+" · "+TYP[a.typ]}</span><h1>${fmt(a.tytul)}</h1>${g!=null?`<p class="gsrc">Z rozdziału <a href="#r${c.id}">${esc(label(c))}</a></p>`:""}${a.polecenie?`<p class="instr">${fmt(a.polecenie)}</p>`:""}</header>
    <div class="stage" id="stage"></div></div>`;
   keyHandler=(RENDER[a.typ]||RENDER.zasada)($("#stage"),a)||null;
+  window.scrollTo(0,0);
+}
+
+/* ===== Dział „Gramatyka” ===== */
+function grammar(){
+  setCrumb("Gramatyka");document.title="Gramatyka · Polski na tablicy";
+  let n=0;
+  let h=`<a class="back" href="#spis">← Spis treści</a>
+  <div class="intro" style="margin-top:1rem"><h1>Gramatyka</h1>
+  <p class="lede">Wszystkie zasady gramatyczne z rozdziałów w jednym miejscu, ułożone tematami. Strzałkami na górze karty można przechodzić po kolei od jednej zasady do następnej.</p></div>
+  <section class="band"><h2><i class="m g">G</i>Tabele odmiany</h2><div class="cards">
+   <a class="card sk-g" href="#przypadki"><span class="ty">Tabele</span><span class="ct">Siedem przypadków</span><span class="cn">pytania, wzory odmiany rzeczowników, przymiotników i zaimków</span></a>
+  </div></section>`;
+  for(const gr of GRAMATYKA){
+    h+=`<section class="band"><h2><i class="m g">G</i>${esc(gr.temat)}</h2>${gr.opis?`<p class="gsrc" style="margin:-.4rem 0 .85rem">${esc(gr.opis)}</p>`:""}<div class="cards">${gr.pozycje.map(p=>{const c=chap(p.r),i=n++;return`<a class="card sk-g" href="#g${i}"><span class="ty">Zasada</span><span class="ct">${fmt(p.t)}</span><span class="cn">${c?esc(label(c)):""}</span></a>`}).join("")}</div></section>`;
+  }
+  app.innerHTML=h;window.scrollTo(0,0);
+}
+function grammarItem(g){
+  const p=GLIST[g];if(!p){location.hash="gramatyka";return}
+  const c=chap(p.r);if(!c||!GOT.has(p.r)){location.hash="gramatyka";return}
+  const t=navToken;
+  app.innerHTML=`<p class="loading">Wczytywanie…</p>`;
+  loadChapter(p.r).then(R=>{
+    if(t!==navToken)return;
+    const i=R.cwiczenia.findIndex(a=>a.typ==="zasada"&&a.tytul===p.t);
+    if(i<0){app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a><p class="empty">Nie znaleziono tej zasady w rozdziale.</p>`;return}
+    activity(c,R,i,g);
+  }).catch(()=>{if(t===navToken)app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a><p class="empty">Nie udało się wczytać zasady. Odśwież stronę i spróbuj jeszcze raz.</p>`});
+}
+function cases(){
+  const P=window.PRZYPADKI;
+  setCrumb("Gramatyka › Siedem przypadków");document.title="Siedem przypadków · Polski na tablicy";
+  const form=f=>f.split(" / ").map(x=>{const [s,e]=x.split("|");return esc(s)+(e?`<b class="e">${esc(e)}</b>`:"")}).join(" / ");
+  const rh=i=>`<th scope="row">${P.przypadki[i][0]}<br><small class="gsrc">${P.przypadki[i][1]}</small></th>`;
+  const chips=(id,items)=>`<div class="ctrl" id="${id}" role="group" style="justify-content:flex-start;margin-top:0">${items.map(([k,l],j)=>`<button type="button" class="btn" data-k="${esc(k)}" aria-pressed="${j===0}">${esc(l)}</button>`).join("")}</div>`;
+  app.innerHTML=`<a class="back" href="#gramatyka">← Gramatyka</a>
+  <div class="intro" style="margin-top:1rem"><h1>Siedem przypadków</h1>
+  <p class="lede">Rzeczownik, przymiotnik i zaimek zmieniają końcówkę w zależności od roli w zdaniu. Końcówki zaznaczono kolorem.</p></div>
+  <div class="rule">
+   <h3>Pytania przypadków</h3>
+   <div class="scroll"><table><thead><tr><th>Przypadek</th><th>Pytania</th><th>Kiedy?</th><th>Przykład</th></tr></thead><tbody>${P.przypadki.map((r,i)=>`<tr><th scope="row">${i+1}. ${r[0]}</th><td><strong>${r[1]}</strong></td><td>${esc(r[2])}</td><td>${fmt(r[3])}</td></tr>`).join("")}</tbody></table></div>
+   <h3>Rzeczowniki — wzory odmiany</h3>
+   ${chips("nChips",Object.entries(P.rzeczowniki).map(([k,v])=>[k,v.label]))}
+   <p id="nNote"></p>
+   <div class="scroll"><table id="nTab"></table></div>
+   <h3>Przymiotniki — wzór „dobry”</h3>
+   ${chips("aChips",[["sg","liczba pojedyncza"],["pl","liczba mnoga"]])}
+   <div class="scroll"><table id="aTab"></table></div>
+   <h3>Zaimki osobowe</h3>
+   <div class="scroll"><table><thead><tr><th>Przypadek</th>${P.zaimki.head.map(x=>`<th>${esc(x)}</th>`).join("")}</tr></thead><tbody>${P.zaimki.rows.map((r,i)=>`<tr>${rh(i)}${r.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+   <h3>Na co uważać</h3>
+   <ul class="pts">${P.uwagi.map(x=>`<li>${fmt(x)}</li>`).join("")}</ul>
+  </div>`;
+  const noun=k=>{const n=P.rzeczowniki[k];$("#nNote").textContent=n.note;
+    $("#nTab").innerHTML=`<thead><tr><th>Przypadek</th><th>Liczba pojedyncza</th><th>Liczba mnoga</th></tr></thead><tbody>${n.sg.map((f,i)=>`<tr>${rh(i)}<td>${form(f)}</td><td>${form(n.pl[i])}</td></tr>`).join("")}</tbody>`};
+  const adj=k=>{const a=P.przymiotnik[k];
+    $("#aTab").innerHTML=`<thead><tr><th>Przypadek</th>${a.head.map(x=>`<th>${x}</th>`).join("")}</tr></thead><tbody>${a.rows.map((r,i)=>`<tr>${rh(i)}${r.map(f=>`<td>${form(f)}</td>`).join("")}</tr>`).join("")}</tbody>`};
+  const wire=(id,fn)=>{const box=$("#"+id);$$("button",box).forEach(b=>b.onclick=()=>{$$("button",box).forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");fn(b.dataset.k)});fn($("button",box).dataset.k)};
+  wire("nChips",noun);wire("aChips",adj);
   window.scrollTo(0,0);
 }
 

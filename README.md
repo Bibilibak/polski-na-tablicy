@@ -4,4 +4,5 @@ Interaktywne materiały do zajęć z języka polskiego online (zasady gramatyczn
 
 - `index.html` – silnik strony
 - `spis.js` – spis treści i lista gotowych rozdziałów (`GOTOWE`)
+- `gramatyka.js` – dział „Gramatyka”: zasady z rozdziałów ułożone tematami oraz tabele „Siedem przypadków”
 - `rozdzialy/rNN.js` – treść rozdziałów
