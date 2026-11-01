@@ -1,0 +1,33 @@
+// Spis treści podręcznika. GOTOWE = rozdziały, które mają już plik w folderze rozdzialy/.
+window.GOTOWE = ["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","pa","oc"];
+window.SPIS = [
+ {id:"00",nr:"",tytul:"Dzień dobry!",s:8,K:["podstawowe słowa i zwroty","polecenia"],L:[],G:[]},
+ {id:"01",nr:"01",tytul:"Pierwszy dzień w szkole",s:10,K:["powitania, pożegnania","przedstawianie się"],L:["podstawowe zwroty","polecenia"],G:["alfabet","liczebniki 0–10"]},
+ {id:"02",nr:"02",tytul:"Cześć, skąd jesteś?",s:18,K:["*Co słychać?*","*Skąd jesteś?*","*Gdzie mieszkasz?*"],L:["dane osobowe"],G:["zaimki osobowe","koniugacja -m, -sz","czasownik *być*","liczebniki 11–29"]},
+ {id:"03",nr:"03",tytul:"Mami, kto to jest?",s:28,K:["*Kto to jest? Co to jest? Czy to jest…?*"],L:["rzeczy w klasie","kolory","podstawowe przymiotniki"],G:["*ten, ta, to*","mianownik l.poj. rzeczowników i przymiotników"]},
+ {id:"04",nr:"04",tytul:"Jaki jesteś?",s:36,K:["prezentacja ludzi","wyrażanie opinii"],L:["opis osoby","przymiotniki"],G:["koniugacja -ę, -isz/-ysz"]},
+ {id:"05",nr:"05",tytul:"Jesteś instruktorem tanga?",s:42,K:["*Kim jesteś?*","*Czym się interesujesz?*","*Ile masz lat?*"],L:["zawody","narodowości","zainteresowania"],G:["narzędnik l.poj.","liczebniki 20–100","formy *rok, lat, lata*"]},
+ {id:"06",nr:"06",tytul:"Co robisz? Nudzę się!",s:50,K:["*Co lubisz robić?*","wyrażanie posiadania"],L:["czas wolny","hobby","sport"],G:["koniugacje -m, -sz; -ę, -esz; -ę, -isz/-ysz","zaimki *mój, twój*","czasowniki modalne *móc, chcieć, musieć*"]},
+ {id:"07",nr:"07",tytul:"Małe zakupy",s:58,K:["*Ile kosztuje?*","zakupy"],L:["kiosk","galeria handlowa"],G:["biernik l.poj. rzeczowników i przymiotników","liczebniki 100–1000"]},
+ {id:"08",nr:"08",tytul:"Mami, jesteś głodna?",s:66,K:["*Co lubisz jeść?*","*Z czym jesz kanapkę?*","wyrażanie preferencji"],L:["posiłki","jedzenie"],G:["narzędnik l.mn.","czasowniki *jeść, pić, woleć*","przymiotniki odrzeczownikowe"]},
+ {id:"09",nr:"09",tytul:"Lubisz marchewkę?",s:74,K:["zakupy"],L:["owoce","warzywa","supermarket"],G:["mianownik i biernik l.mn. rzeczowników niemęskoosobowych"]},
+ {id:"10",nr:"10",tytul:"Uwielbiam polskie jedzenie!",s:80,K:["kawiarnia","restauracja"],L:["potrawy","polskie dania","desery"],G:["dopełniacz l.poj. – negacja","zaimki osobowe w narzędniku"]},
+ {id:"11",nr:"11",tytul:"Rodzina",s:86,K:["*Czyj? Czyja? Czyje?*","*Jak często?*","*Kiedy?*"],L:["rodzina","pory dnia","*zawsze, zwykle…*","plan dnia"],G:["zaimki dzierżawcze","przysłówki częstotliwości"]},
+ {id:"12",nr:"12",tytul:"Co robisz w poniedziałek o ósmej?",s:94,K:["umawianie się na spotkanie","zapraszanie"],L:["godziny","dni tygodnia","rutyna dnia"],G:["liczebniki porządkowe 1–24","powtórzenie czasowników"]},
+ {id:"13",nr:"13",tytul:"Gdzie byłaś Mami? Byłam w kinie",s:102,K:["*Co robiłeś? Co robiłaś?*"],L:["spędzanie wolnego czasu"],G:["czas przeszły","czasowniki *jeść, pójść* oraz zakończone na *-eć*"]},
+ {id:"14",nr:"14",tytul:"Z przewodnikiem po Krakowie",s:110,K:["pytanie o drogę"],L:["obiekty w mieście","transport"],G:["czasowniki *iść/chodzić, jechać/jeździć*","zaimki osobowe w bierniku"]},
+ {id:"15",nr:"15",tytul:"Karton czy pudełko?",s:116,K:["zakupy","wyrażanie prośby"],L:["ilości i miary","opakowania","poczta"],G:["dopełniacz l.mn. rzeczowników i przymiotników","zaimki osobowe w dopełniaczu","rekcja liczebników"]},
+ {id:"16",nr:"16",tytul:"Co ma być, to będzie",s:124,K:["plany na przyszłość"],L:["pogoda","pory roku","miesiące","andrzejki"],G:["przysłówek","czas przyszły złożony","czasowniki modalne w czasie przyszłym"]},
+ {id:"17",nr:"17",tytul:"Plotki, plotki. Kto z kim i o czym?",s:132,K:["*Podoba ci się?*","wyrażanie uczuć i opinii"],L:["samopoczucie","pamiątki z Polski"],G:["*lubić, podobać się*","deklinacja zaimków osobowych"]},
+ {id:"18",nr:"18",tytul:"Pokaż mi swoje mieszkanie…",s:138,K:["*Gdzie to jest?*","opis mieszkania","*O czym marzysz?*"],L:["mieszkanie","pomieszczenia i sprzęty","lokalizacja przedmiotów"],G:["miejscownik l.poj. i l.mn.","przyimki *na, w, przy, o, po*"]},
+ {id:"19",nr:"19",tytul:"Wszędzie dobrze, ale w domu najlepiej",s:146,K:["szukanie i wynajmowanie mieszkania"],L:["typy mieszkań","ogłoszenia","lokalizacja"],G:["przyimki statyczne"]},
+ {id:"20",nr:"20",tytul:"Podróże kształcą",s:152,K:["dworzec PKP"],L:["kierunki geograficzne","atrakcje turystyczne w Polsce"],G:["przyimki statyczne i dynamiczne"]},
+ {id:"21",nr:"21",tytul:"Kiedy to było?",s:158,K:["*Kiedy? W którym roku?*","życzenia"],L:["pary aspektowe","biografia"],G:["aspekt w czasie przeszłym","daty"]},
+ {id:"22",nr:"22",tytul:"Dokąd pojedziemy na weekend?",s:166,K:["*Co robisz w weekend?*","telefonowanie"],L:["plany na weekend"],G:["aspekt w czasie przyszłym"]},
+ {id:"23",nr:"23",tytul:"Za małe? Za duże? W sam raz!",s:172,K:["zakupy","komplementy"],L:["ubrania","materiały i wzory"],G:["stopniowanie przymiotników","konstrukcje *mieć na sobie / nosić* + biernik"]},
+ {id:"24",nr:"24",tytul:"Jak cię widzą, tak cię piszą",s:180,K:["u fryzjera, w studio fitness","wyrażanie aprobaty i dezaprobaty"],L:["wygląd zewnętrzny","części ciała"],G:["stopniowanie przysłówków"]},
+ {id:"25",nr:"25",tytul:"Ani ręką, ani nogą…",s:188,K:["u lekarza, u dentysty","dawanie rad"],L:["idiomy związane z częściami ciała"],G:["czasownik *powinien*"]},
+ {id:"26",nr:"26",tytul:"Same problemy!",s:196,K:["wymiana informacji","prośby, reklamacje"],L:["usługi","wypadek, kradzież"],G:["tryb przypuszczający czasowników *móc, chcieć*"]},
+ {id:"pa",nr:"A",tytul:"Pary aspektowe",s:204,K:[],L:["pary aspektowe"],G:["aspekt"]},
+ {id:"oc",nr:"B",tytul:"Odmiana czasowników",s:205,K:[],L:[],G:["odmiana czasowników"]}
+];
