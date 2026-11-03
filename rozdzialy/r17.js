@@ -100,6 +100,13 @@ cwiczenia: [
   {q:"– Jak ci się podobał film? – ___",o:["Był świetny!","Byłem świetny!","Podobam się."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Plotki na klatce schodowej",
+ zasady:{r:[
+   ["Podoba mi się…","**podobać się** + celownik (komu?): mi, ci, mu, jej, nam, wam, im","Nowy sąsiad mi się podoba. Jej się nie podoba."],
+   ["Kim jest?","*być* + **narzędnik**","Podobno on jest aktor[[em]]!"],
+   ["Z kim przyszedł?","**z** + **narzędnik**","Przyszedł z piękną kobiet[[ą]] i z ps[[em]]."],
+   ["Słyszałaś, że…? Podobno…","czas przeszły: on **-ł**, ona **-ła**; *słyszałem / słyszałam*","Słyszałaś, że on wczoraj przyjecha[[ł]]?"],
+   ["Tylko nikomu nie mów!","podwójne przeczenie: **nikt, nic, nikomu, nigdy** + **nie**","Nikomu nie mów! Nic nie wiem."]
+  ]},
  sytuacja:"Dwie sąsiadki (albo dwóch sąsiadów) spotykają się na klatce schodowej. Jedna osoba ma gorące plotki o nowym sąsiedzie z trzeciego piętra.",
  role:[
   {kto:"Osoba A: mam plotkę", zadania:["Zacznij: *Wiesz, że…?*","Opowiedz plotkę o nowym sąsiedzie: kim jest, z kim przyszedł, co ci się podoba albo nie podoba.","Powiedz: *Tylko nikomu nie mów!*"]},
@@ -116,12 +123,27 @@ cwiczenia: [
   ["A","Tylko proszę nikomu nie mówić!"]
  ]},
 {sekcja:"K", typ:"scenka", tytul:"W sklepie z pamiątkami",
+ zasady:{r:[
+   ["Podoba ci się…?","jedna rzecz: **podoba się**; l. mn.: **podobają się**","Podoba ci się ten kubek? Podobają mi się te kartki."],
+   ["Co kupisz dla…?","**dla** + **dopełniacz**","Kupię magnes dla mam[[y]] i koszulkę dla brat[[a]]."],
+   ["twojej mamie spodoba się…","**podobać się** + **celownik** (komu?)","Mam[[ie]] spodoba się bursztyn. Bratu spodoba się koszulka."],
+   ["On lubi słodycze.","**lubić** + biernik; **nie lubić** + dopełniacz","Brat lubi czekoladę, ale nie lubi cukierk[[ów]]."],
+   ["To za drogie.","**za** + przymiotnik = więcej niż trzeba","Ten kubek jest za duży, a ta torba za droga."]
+  ],
+  uwaga:"*Lubię kubek* = ogólnie lubię tę rzecz. *Podoba mi się kubek* = ładnie wygląda (pierwsze wrażenie)."},
  sytuacja:"Ostatni dzień w Krakowie. Dwie osoby kupują pamiątki dla rodziny i przyjaciół.",
  role:[
   {kto:"Osoba A", zadania:["Zapytaj: *Podoba ci się…?*","Powiedz, co chcesz kupić dla mamy i dla brata.","Powiedz, czego nie lubisz."]},
   {kto:"Osoba B", zadania:["Powiedz, co ci się podoba, a co nie.","Doradź pamiątkę dla każdej osoby.","Wybierzcie razem prezent dla nauczyciela."]}
  ],
  zwroty:["Podoba ci się ten kubek?","Podobają mi się te…","Co kupisz dla…?","Myślę, że twojej mamie spodoba się…","On lubi słodycze.","To za drogie."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Co ci się podoba?", polecenie:"Losuj pytanie i odpowiadaj. Uważaj na *lubię* i *podoba mi się*!",
+{sekcja:"K", typ:"rozmowa", tytul:"Co ci się podoba?",
+ zasady:{r:[
+   ["Podoba ci się…?","**podobać się** + celownik; w czasie przeszłym: podobał / podobała / podobało / podobały","Kraków mi się podoba. Ten film mi się podobał."],
+   ["Jak się czujesz?","**czuć się** + przysłówek","Czuję się dobrze / źle / świetnie."],
+   ["Kiedy jesteś zestresowany?","przymiotnik: **-y** (m.), **-a** (ż.)","Jestem zestresowan[[y]] / zestresowan[[a]] przed egzaminem."],
+   ["Czego się boisz?","**bać się** + **dopełniacz**","Boję się pająk[[ów]] i ciemnośc[[i]]."],
+   ["Z czego się cieszysz?","**cieszyć się z** + **dopełniacz**","Cieszę się z prezent[[u]] i z pogod[[y]]."]
+  ]}, polecenie:"Losuj pytanie i odpowiadaj. Uważaj na *lubię* i *podoba mi się*!",
  pytania:["Podoba ci się Kraków? (albo twoje miasto)","Jaki film ostatnio ci się podobał?","Co lubisz, a co ci się nie podoba w Polsce?","Jak się dziś czujesz?","Kiedy jesteś zestresowany / zestresowana?","Co kupujesz jako pamiątkę z podróży?","Jaka pamiątka z Polski jest najlepsza?","Czego się boisz?","Z czego się dzisiaj cieszysz?","Co ci się podoba w twoim mieszkaniu?"]}
 ]};

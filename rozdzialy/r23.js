@@ -93,6 +93,14 @@ cwiczenia: [
   {ex:["Ładnie ci w tym kolorze!","Świetnie wyglądasz!","Pasuje ci ta sukienka.","Masz piękną kurtkę! – Dziękuję, kupiłam ją na wyprzedaży."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Za małe? Za duże? W sam raz!",
+ zasady:{r:[
+   ["Szukam…","**szukać** + **dopełniacz**","Szukam sukienk[[i]] / garnitur[[u]] na wesele."],
+   ["Jest za mała / za duża.","**za** + przymiotnik = bardziej niż trzeba; **w sam raz** = dobrze","Ta marynarka jest za duż[[a]]. Te spodnie są w sam raz."],
+   ["Czy jest większy rozmiar?","stopniowanie: **-szy** / **-ejszy**; nieregularne: duży – **większy**, mały – **mniejszy**, dobry – **lepszy**","Czy jest mniejsz[[y]] rozmiar? Ta koszula jest tańsz[[a]]."],
+   ["Ta jest tańsza…","porównanie: **-szy niż** + mianownik","Ta sukienka jest tańsza niż tamta."],
+   ["Ładnie panu w…","**ładnie** + celownik (komu?) + **w** + miejscownik","Ładnie panu w tym garniturz[[e]]! Ładnie ci w tym kolorz[[e]]."],
+   ["Wezmę to.","*wziąć* + **biernik**","Wezmę t[[ę]] sukienk[[ę]]."]
+  ]},
  sytuacja:"Klient szuka ubrania na wesele przyjaciela. Przymierza kilka rzeczy. Sprzedawca pomaga i prawi komplementy.",
  role:[
   {kto:"Klient / klientka", zadania:["Powiedz, czego szukasz i na jaką okazję.","Podaj rozmiar i kolor.","Przymierz: pierwsza rzecz za mała, druga za duża, trzecia w sam raz.","Porównaj ceny: *Ta jest tańsza…*","Kup jedną rzecz."]},
@@ -113,6 +121,14 @@ cwiczenia: [
  ]},
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:[{z:"Czy mogę przymierzyć tę sukienkę?",alt:["Czy tę sukienkę mogę przymierzyć?"]},"Te spodnie są za małe.","Czy jest większy rozmiar?","Ładnie ci w tym kolorze!","Ta kurtka jest tańsza niż tamta.",{z:"Dzisiaj mam na sobie niebieski sweter.",alt:["Mam dzisiaj na sobie niebieski sweter.","Mam na sobie dzisiaj niebieski sweter."]}]},
-{sekcja:"K", typ:"rozmowa", tytul:"Moda i porównania", polecenie:"Losuj pytanie. Odpowiadaj z porównaniem albo z *mieć na sobie / nosić*.",
+{sekcja:"K", typ:"rozmowa", tytul:"Moda i porównania",
+ zasady:{r:[
+   ["Co masz dzisiaj na sobie?","**mieć na sobie** + **biernik**","Mam na sobie niebieski sweter i czarną spódnic[[ę]]."],
+   ["Co zwykle nosisz?","**nosić** + **biernik** (regularnie)","Do pracy noszę koszulę i dżinsy."],
+   ["Kto jest najwyższy?","stopień najwyższy: **naj-** + stopień wyższy","wysoki – wyż[[szy]] – **naj**wyższy · młody – młod[[szy]] – **naj**młodszy"],
+   ["Co jest lepsze?","**dobry – lepszy – najlepszy**, **zły – gorszy – najgorszy**; porównanie: **niż** + mianownik albo **od** + dopełniacz","Lato jest lepsze niż zima. / Lato jest lepsze od zim[[y]]."],
+   ["Powiedz komplement.","**ładnie / dobrze** + celownik + **w** + miejscownik","Ładnie ci w tym swetrz[[e]]!"],
+   ["Gdzie są najtańsze ubrania?","stopień najwyższy w l. mn.: **-sze / -ejsze**","Najtańsze ubrania są na targu."]
+  ]}, polecenie:"Losuj pytanie. Odpowiadaj z porównaniem albo z *mieć na sobie / nosić*.",
  pytania:["Co masz dzisiaj na sobie?","Co zwykle nosisz do pracy albo na lekcje?","Jakie jest twoje ulubione ubranie?","Wolisz zakupy w sklepie czy w internecie? Dlaczego?","Kto w twojej rodzinie jest najwyższy? A najmłodszy?","Jakie miasto jest według ciebie najpiękniejsze?","Co jest lepsze: lato czy zima?","Powiedz komplement osobie obok.","Gdzie są najtańsze ubrania w twoim mieście?","Jaki był twój najlepszy zakup w tym roku?"]}
 ]};

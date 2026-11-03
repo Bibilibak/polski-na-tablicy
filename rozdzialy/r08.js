@@ -30,7 +30,18 @@ cwiczenia: [
 {sekcja:"K", typ:"pary", tytul:"Co z czym?",
  pary:[["kawa","z mlekiem"],["herbata","z cytryną"],["naleśniki","z dżemem"],["kanapka","z szynką"],["rosół","z makaronem"],["pierogi","z mięsem"],["płatki","z jogurtem"]]},
 {sekcja:"K", typ:"rozmowa", tytul:"Rozmowa przy stole", polecenie:"Losuj pytanie. Odpowiadaj pełnym zdaniem i zapytaj kolejną osobę.",
- pytania:["Co jesz na śniadanie?","Z czym lubisz kanapki?","Co wolisz: kawę czy herbatę?","Co wolisz: pizzę czy pierogi?","Herbata z cukrem czy bez cukru?","O której godzinie jesz obiad?","Czego nie lubisz jeść?","Jesteś teraz głodny / głodna?","Co pijesz rano?","Jakie jest twoje ulubione danie?","Co jesz na kolację?","Lubisz gotować? Co gotujesz?"]},
+ pytania:["Co jesz na śniadanie?","Z czym lubisz kanapki?","Co wolisz: kawę czy herbatę?","Co wolisz: pizzę czy pierogi?","Herbata z cukrem czy bez cukru?","O której godzinie jesz obiad?","Czego nie lubisz jeść?","Jesteś teraz głodny / głodna?","Co pijesz rano?","Jakie jest twoje ulubione danie?","Co jesz na kolację?","Lubisz gotować? Co gotujesz?"],
+ zasady:{r:[
+   ["Co jesz? Co pijesz? Co lubisz?","*jeść, pić, lubić, woleć* + **biernik** (kogo? co?)","Jem kanapk[[ę]]. Lubię zup[[ę]] pomidorow[[ą]]."],
+   ["Co wolisz: kawę czy herbatę?","*woleć* + **biernik** … **niż** + **biernik**","Wolę herbat[[ę]] niż kaw[[ę]]."],
+   ["Co jesz na kolację?","**na** + **biernik**","Na kolacj[[ę]] jem sałatk[[ę]]."],
+   ["Z czym lubisz kanapki?","**z** + **narzędnik** (z kim? z czym?)","Lubię kanapki z ser[[em]] i z pomidor[[ami]]."],
+   ["Z cukrem czy bez cukru?","**bez** + **dopełniacz** (kogo? czego?)","Piję herbatę bez cukr[[u]]."],
+   ["Czego nie lubisz jeść?","**nie** + **dopełniacz** (zamiast biernika)","Nie lubię ryb[[y]]. Nie jem mięs[[a]]."],
+   ["O której godzinie jesz obiad?","**o** + **miejscownik** (godzina)","Jem obiad o drugi[[ej]]."]
+  ],
+  uwaga:"Po przeczeniu biernik zmienia się w dopełniacz: *Lubię ryb[[ę]].* → *Nie lubię ryb[[y]].*"}
+},
 {sekcja:"K", typ:"scenka", tytul:"Jesteś głodna?",
  sytuacja:"Wieczór w mieszkaniu studenckim. Jedna osoba wraca z pracy bardzo głodna. Druga osoba proponuje kolację.",
  role:[
@@ -48,7 +59,15 @@ cwiczenia: [
   ["B","Dobrze. A co pijesz: herbatę czy sok?"],
   ["A","Herbatę z cytryną, ale bez cukru."],
   ["B","Proszę bardzo. Smacznego!"]
- ]},
+ ],
+ zasady:{r:[
+   ["Chcesz kanapkę? Wolę kanapkę.","*chcieć, woleć, pić* + **biernik** (kogo? co?)","Chcesz kanapk[[ę]]? Piję herbat[[ę]]."],
+   ["Z czym?","**z** + **narzędnik** (z kim? z czym?)","Z ser[[em]] i z pomidor[[em]]. Herbata z cytryn[[ą]]."],
+   ["Nie jem mięsa.","**nie** + **dopełniacz** (zamiast biernika)","Jem mięs[[o]]. → Nie jem mięs[[a]]."],
+   ["…ale bez cukru.","**bez** + **dopełniacz** (kogo? czego?)","Herbata bez cukr[[u]]."]
+  ],
+  uwaga:"*Umieram z głod[[u]]* to **z + dopełniacz**: mówi, dlaczego (przyczyna). To nie jest narzędnik."}
+},
 {sekcja:"G", typ:"zasada", tytul:"Narzędnik liczby mnogiej",
  bloki:[
   "W liczbie mnogiej narzędnik jest prosty: prawie zawsze **-ami**, dla wszystkich rodzajów.",

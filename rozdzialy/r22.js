@@ -70,6 +70,14 @@ cwiczenia: [
   {q:"Źle słyszysz rozmówcę:",o:["Przepraszam, przerywa. Oddzwonię.","Przepraszam, pomyłka.","Słucham, łączę."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Telefon: plany na weekend",
+ zasady:{r:[
+   ["Mówi… Czy zastałam…?","telefon: **Mówi** + imię; *zastać* + **biernik**","Dzień dobry, mówi Anna. Czy zastałam Piotr[[a]]?"],
+   ["Syna nie ma.","**nie ma** + **dopełniacz**: go, jej","Niestety nie ma go teraz. / Nie ma jej w domu."],
+   ["Dokąd pojedziemy?","przyszłość **dokonana** (rezultat): odmiana jak w czasie teraźniejszym","Pojedzi[[emy]] w góry. Zrobi[[my]] ognisko."],
+   ["Wezmę namiot.","*wziąć*: wezm[[ę]], weźmi[[esz]], weźmi[[e]], weźmi[[emy]], wezm[[ą]] + **biernik**","Wezmę namiot, a ty weźmiesz kuchenkę."],
+   ["Czym pojedziemy?","środek transportu: **narzędnik**","Pojedziemy pociąg[[iem]]."],
+   ["Co będziemy robić?","**będę** + niedokonany = proces, czynność trwa","Będziemy dużo chodzić po górach."]
+  ]},
  sytuacja:"Osoba A dzwoni do przyjaciela, żeby zaplanować wyjazd na weekend. Najpierw telefon odbiera mama przyjaciela, bo przyjaciel jest pod prysznicem.",
  role:[
   {kto:"Osoba A: dzwonię", zadania:["Przedstaw się mamie i zapytaj o przyjaciela.","Poczekaj albo poproś o przekazanie wiadomości.","Z przyjacielem zaplanuj weekend: dokąd pojedziecie, czym, co zrobicie.","Pożegnaj się przez telefon."]},
@@ -90,6 +98,14 @@ cwiczenia: [
  ]},
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:["Dzień dobry, mówi Anna Nowak.",{z:"Czy mogę rozmawiać z panem Kowalskim?",alt:["Czy mogę z panem Kowalskim rozmawiać?"]},"Proszę przekazać, że dzwoniłam.",{z:"W sobotę pojedziemy nad jezioro.",alt:["Pojedziemy w sobotę nad jezioro.","Pojedziemy nad jezioro w sobotę."]},{z:"Jutro zadzwonię do ciebie.",alt:["Zadzwonię do ciebie jutro.","Jutro do ciebie zadzwonię."]},"Do usłyszenia!"]},
-{sekcja:"K", typ:"rozmowa", tytul:"Co zrobisz w weekend?", polecenie:"Losuj pytanie. Odpowiadaj w czasie przyszłym i uważaj na aspekt.",
+{sekcja:"K", typ:"rozmowa", tytul:"Co zrobisz w weekend?",
+ zasady:{r:[
+   ["Co zrobisz?","**dokonany** w przyszłości = rezultat, jedno zdarzenie","Zrobi[[ę]] zakupy. Przeczytam tę książkę."],
+   ["Co będziesz robić?","**będę** + **niedokonany** = proces","Będę odpoczywać i czytać."],
+   ["Kiedy zadzwonisz do rodziny?","**dzwonić / zadzwonić do** + **dopełniacz**","Zadzwonię do mam[[y]] w niedzielę."],
+   ["Dokąd pojedziesz?","**do** + dopełniacz · **nad** + biernik · **w** góry","Pojadę do Gdańsk[[a]] / nad morz[[e]] / w gór[[y]]."],
+   ["Wolisz dzwonić czy pisać?","*woleć* + bezokolicznik; **bo** + powód","Wolę pisać, bo przez telefon mówię za szybko."]
+  ],
+  uwaga:"Czas przyszły dokonany ma formy jak czas teraźniejszy: *czytam* (teraz) → *przeczytam* (w przyszłości)."}, polecenie:"Losuj pytanie. Odpowiadaj w czasie przyszłym i uważaj na aspekt.",
  pytania:["Co robisz w ten weekend?","Dokąd pojedziesz na najbliższy długi weekend?","Co zrobisz jutro po lekcji?","Kiedy zadzwonisz do rodziny?","Jaką książkę przeczytasz w tym miesiącu?","Wolisz dzwonić czy pisać wiadomości?","Czy rozmowa przez telefon po polsku jest dla ciebie trudna?","Co musisz zrobić w tym tygodniu?","Co będziesz robić w wakacje?","Zaplanuj idealny weekend w Polsce."]}
 ]};

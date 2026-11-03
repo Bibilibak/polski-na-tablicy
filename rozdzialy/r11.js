@@ -100,6 +100,15 @@ cwiczenia: [
   "Jak często dzwonisz do mamy?"
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Zdjęcie rodzinne",
+ zasady:{r:[
+   ["Kto to jest? To mój / moja…","zaimek dzierżawczy w rodzaju rzeczownika: **mój** brat, **moja** siostra, **moje** dziecko","To moja mama, a to mój tata."],
+   ["Czyj to…?","**czyj** (m.), **czyja** (ż.), **czyje** (n. i l. mn.)","Czyj to pies? Czyja to torba? Czyje to dziecko?"],
+   ["jego, jej, ich","**jego, jej, ich** się nie zmieniają","To jest jego żona. To są ich dzieci."],
+   ["Ile on / ona ma lat?","**1 rok**; **2–4 lata**; **5–21 lat**","Mój brat ma dwadzieścia trzy lat[[a]]."],
+   ["Kim jest?","*być* + **narzędnik**","Moja siostra jest lekark[[ą]], a brat jest student[[em]]."],
+   ["Jak często się spotykacie?","**raz w** tygodniu / miesiącu, **w każdą** niedzielę","Spotykamy się raz w miesiącu."]
+  ]},
+
  sytuacja:"Osoba A pokazuje zdjęcie z rodzinnego obiadu (może pokazać prawdziwe zdjęcie albo wymyślić rodzinę). Osoba B pyta, kto jest na zdjęciu.",
  role:[
   {kto:"Osoba A: moja rodzina", zadania:["Pokaż zdjęcie i opowiedz, kto to jest.","Powiedz, ile lat mają, kim są, gdzie mieszkają.","Odpowiedz, jak często się spotykacie."]},
@@ -118,6 +127,15 @@ cwiczenia: [
   ["B","Jak często się spotykacie?"],
   ["A","Zwykle raz w miesiącu, w niedzielę na obiedzie u babci."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Rodzina i mój dzień", polecenie:"Losuj pytanie. Odpowiadaj, używając słów *zawsze, zwykle, często, czasami, rzadko, nigdy nie*.",
+{sekcja:"K", typ:"rozmowa", tytul:"Rodzina i mój dzień",
+ zasady:{r:[
+   ["Jak często…?","zawsze, często, czasem, rzadko, **nigdy nie**","Często gotuję. Rzadko piję kawę."],
+   ["Czego nigdy nie robisz?","**nigdy** + **nie** + czasownik; po *nie*: **dopełniacz**","Nigdy nie piję kaw[[y]] wieczorem."],
+   ["O której wstajesz?","**o** + liczebnik porządkowy (godzina)","Wstaję o siódm[[ej]]."],
+   ["Masz rodzeństwo?","*mieć* + **biernik** (osoby męskie: **-a**); *nie mam* + **dopełniacz**","Mam brat[[a]] i siostr[[ę]]. Nie mam rodzeństw[[a]]."],
+   ["Kiedy…? Co robisz wieczorem?","pory dnia: rano, przed południem, po południu, wieczorem, w nocy","Wieczorem odpoczywam, a rano pracuję."]
+  ],
+  uwaga:"Po polsku mówimy dwa razy „nie”: *Nigdy* **nie** *gotuję.*"},
+ polecenie:"Losuj pytanie. Odpowiadaj, używając słów *zawsze, zwykle, często, czasami, rzadko, nigdy nie*.",
  pytania:["Jak często pijesz kawę?","Jak często gotujesz?","Jak często dzwonisz do rodziny?","O której zwykle wstajesz?","Co robisz wieczorem?","Kiedy odpoczywasz?","Masz rodzeństwo?","Opowiedz o swojej rodzinie.","Jak często widzisz dziadków?","Czego nigdy nie robisz rano?","Co zawsze robisz w weekend?","Jak wygląda twój typowy dzień?"]}
 ]};

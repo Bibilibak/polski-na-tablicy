@@ -104,6 +104,15 @@ cwiczenia: [
   {z:"W poniedziałek o ósmej mam lekcję.",alt:["Mam lekcję w poniedziałek o ósmej.","O ósmej w poniedziałek mam lekcję.","W poniedziałek mam lekcję o ósmej."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Kiedy masz czas?",
+ zasady:{r:[
+   ["Masz czas w…?","**w** + dzień tygodnia (biernik): w poniedziałek, **we** wtorek, w środ[[ę]], w czwartek, w piątek, w sobot[[ę]], w niedziel[[ę]]","Masz czas w czwartek? – We wtorek nie mogę."],
+   ["O której?","**o** + liczebnik porządkowy (miejscownik): o szóst[[ej]], o siódm[[ej]], o ósm[[ej]]","Spotkajmy się o siedemnast[[ej]]."],
+   ["wolne od…","**od** … **do** … + liczebnik w dopełniaczu","W czwartek mam wolne od osiemnast[[ej]]."],
+   ["Niestety nie mogę, bo…","*móc* + bezokolicznik; **bo** + powód","Nie mogę, bo w poniedziałek mam basen."],
+   ["Spotkajmy się…","propozycja: **Spotkajmy się** / **Chodźmy** + miejsce","Spotkajmy się przed kinem o siódmej."]
+  ],
+  uwaga:"*Wtorek* ma **we**: *we wtorek* (łatwiej wymówić)."},
+
  sytuacja:"Dwie osoby chcą iść razem do kina w tym tygodniu. Każda ma swój kalendarz. Znajdźcie dzień i godzinę, kiedy obie osoby są wolne.",
  role:[
   {kto:"Osoba A", zadania:["Zaproś osobę B do kina.","Twój tydzień: **pon.** 18:00 basen · **wt.** wolne · **śr.** 19:00 kurs polskiego · **czw.** wolne od 17:00 · **pt.** 20:00 urodziny brata","Ustal dzień, godzinę i miejsce."]},
@@ -121,6 +130,14 @@ cwiczenia: [
   ["B","Pasuje mi! Gdzie się spotkamy?"],
   ["A","Przed kinem o siódmej. Do zobaczenia w czwartek!"]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Twój tydzień", polecenie:"Losuj pytanie. Odpowiadaj z godziną i dniem tygodnia.",
+{sekcja:"K", typ:"rozmowa", tytul:"Twój tydzień",
+ zasady:{r:[
+   ["Co robisz w poniedziałek?","**w** + dzień tygodnia (biernik): w środ[[ę]], w sobot[[ę]], w niedziel[[ę]], **we** wtorek","W sobotę wstaję późno."],
+   ["O której…?","**o** + liczebnik porządkowy: o ósm[[ej]], o dziewiąt[[ej]], o czternast[[ej]]","Zaczynam pracę o ósmej."],
+   ["Co robisz…?","odmiana czasowników: *-m, -sz* (czyt[[am]]), *-ę, -esz* (pisz[[ę]]), *-ę, -isz* (rob[[ię]])","Wieczorem czytam, piszę maile i robię kolację."],
+   ["Zaproś kogoś na kawę.","**Masz czas w…?** **Zapraszam cię na** + biernik","Zapraszam cię na kaw[[ę]]. Pasuje ci w piątek o piątej?"],
+   ["Jaki dzień lubisz?","*lubić* + biernik; **bo** + powód","Lubię piątek, bo wieczorem mam wolne."]
+  ]},
+ polecenie:"Losuj pytanie. Odpowiadaj z godziną i dniem tygodnia.",
  pytania:["Co robisz w poniedziałek o ósmej?","O której wstajesz w sobotę?","Co robisz w piątek wieczorem?","Jaki dzień tygodnia lubisz najbardziej? Dlaczego?","O której zaczynasz pracę albo lekcje?","Co robisz w niedzielę po południu?","Kiedy masz czas w tym tygodniu?","O której jesz obiad?","Zaproś kogoś z grupy na kawę. Ustalcie dzień i godzinę.","Jaki dzień tygodnia jest dla ciebie najtrudniejszy?"]}
 ]};

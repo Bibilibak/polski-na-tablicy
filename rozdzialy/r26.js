@@ -83,6 +83,13 @@ cwiczenia: [
   {q:"„Chcę zwrot pieniędzy.” – grzeczniej:",o:["Chciałbym otrzymać zwrot pieniędzy.","Dawaj pieniądze!","Pieniądze chcę."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Reklamacja w sklepie",
+ zasady:{r:[
+   ["Chciałbym złożyć reklamację.","tryb przypuszczający: chciał**bym** (m.) / chciała**bym** (ż.) + bezokolicznik","Chciałabym złożyć reklamację."],
+   ["Czy mógłbym…?","grzeczna prośba: mógł**bym** / mogła**bym**; *Czy mógłby pan / mogłaby pani…?*","Czy mógłbym je wymienić? Czy mogłaby pani sprawdzić?"],
+   ["Kupiłem to…","czas przeszły dokonany; **… temu**","Kupiłam je tydzień temu."],
+   ["Nie działa.","jedna rzecz: **działa**; l. mn. (słuchawki): **działają**","Słuchawki działają tylko z jednej strony."],
+   ["zwrot pieniędzy","*chcieć, otrzymać* + **biernik**; *zwrot* + **dopełniacz**","Chciałbym otrzymać zwrot pieniędzy."]
+  ]},
  sytuacja:"Klient kupił słuchawki tydzień temu. Od wczoraj działają tylko z jednej strony. Wraca do sklepu z paragonem.",
  role:[
   {kto:"Klient / klientka", zadania:["Powiedz, że chcesz złożyć reklamację.","Wyjaśnij, co się stało i kiedy kupiłeś / kupiłaś słuchawki.","Grzecznie poproś o wymianę albo zwrot pieniędzy (*Czy mógłbym…?*).","Nie zgadzaj się od razu na pierwszą propozycję."]},
@@ -101,12 +108,26 @@ cwiczenia: [
   ["Klient","Bardzo dziękuję!"]
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Na komisariacie",
+ zasady:{r:[
+   ["Chciałabym zgłosić kradzież.","**chciałbym / chciałabym** + bezokolicznik","Chciałabym zgłosić kradzież plecaka."],
+   ["Ukradli mi…","**ukradli mi** + **biernik**","Ukradli mi plecak / torb[[ę]] / telefon."],
+   ["W plecaku był / była / były…","czas przeszły zgodny z rzeczownikiem: **był** (m.), **była** (ż.), **było** (n.), **były** (l. mn.)","Był portfel, była karta i były dokumenty."],
+   ["Gdzie? Kiedy?","**w** + miejscownik; **około** + dopełniacz","W tramwaj[[u]] numer osiem, około piąt[[ej]]."],
+   ["Powinna pani…","**powinien / powinna** + bezokolicznik","Powinna pani zablokować kartę."]
+  ]},
  sytuacja:"Turystce ukradli w tramwaju plecak. Idzie na policję zgłosić kradzież.",
  role:[
   {kto:"Turystka / turysta", zadania:["Powiedz, co się stało.","Odpowiedz: gdzie, kiedy, co było w plecaku.","Opisz plecak (kolor, wielkość).","Zapytaj, co teraz zrobić z dokumentami."]},
   {kto:"Policjant / policjantka", zadania:["Zapytaj: *Co się stało?*","Zadawaj pytania: gdzie, kiedy, co było w środku.","Poproś o opis plecaka.","Daj radę: *Powinna pani zablokować kartę…*","Poproś o podpis."]}
  ],
  zwroty:["Chciałabym zgłosić kradzież.","Ukradli mi…","W tramwaju numer…","Około…","W plecaku był / była / były…","Czarny, duży plecak.","Powinna pani zablokować kartę.","Proszę tu podpisać."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Same problemy", polecenie:"Losuj kartę. Odpowiadaj albo poproś o coś grzecznie (*Czy mógłby pan…? Chciałabym…*).",
+{sekcja:"K", typ:"rozmowa", tytul:"Same problemy",
+ zasady:{r:[
+   ["Czy kiedyś coś zgubiłeś?","czas przeszły: zgubił**em** / zgubił**am**","Zgubiłam telefon w autobusie."],
+   ["Co chciałbyś zmienić?","**chciałbym / chciałabym** + bezokolicznik; pytanie: chciał**byś** / chciała**byś**","Chciałbym zmienić komunikację w mieście."],
+   ["Poproś grzecznie.","**Czy mógłbyś / mogłabyś…?** · do nauczyciela: **Czy mógłby pan / mogłaby pani…?**","Czy mogłabyś pożyczyć mi długopis? Czy mógłby pan powtórzyć?"],
+   ["Zepsuł mi się telefon.","**zepsuć się** w czasie przeszłym: zepsuł się / zepsuła się / zepsuło się","Zepsuł mi się telefon, a potem zepsuła się pralka."],
+   ["Do kogo dzwonisz?","**dzwonić do** + **dopełniacz**","Dzwonię do ślusarz[[a]] / do właściciel[[a]]."]
+  ]}, polecenie:"Losuj kartę. Odpowiadaj albo poproś o coś grzecznie (*Czy mógłby pan…? Chciałabym…*).",
  pytania:["Czy kiedyś coś zgubiłeś / zgubiłaś? Co się stało?","Czy kiedyś składałeś / składałaś reklamację?","Co chciałbyś / chciałabyś zmienić w swoim mieście?","Gdzie chciałbyś / chciałabyś mieszkać za dziesięć lat?","Poproś grzecznie osobę obok, żeby pożyczyła ci długopis.","Poproś nauczyciela, żeby powtórzył zdanie.","Zepsuł ci się telefon. Co robisz?","Zatrzasnąłeś / zatrzasnęłaś drzwi. Do kogo dzwonisz?","Jaki był największy problem w twojej podróży?","Co chciałbyś / chciałabyś robić po tym kursie polskiego?"]}
 ]};

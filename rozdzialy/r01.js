@@ -48,6 +48,13 @@ cwiczenia: [
   "Do zobaczenia jutro!"
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Pierwszy dzień w szkole językowej",
+ zasady:{r:[
+   ["Jak się pan / pani nazywa?","forma oficjalna: **pan / pani** + czasownik w 3. osobie (jak *on, ona*)","Jak się pan nazyw[[a]]? Skąd pani jest?"],
+   ["Nazywam się…","*nazywać się*: ja nazyw[[am]] się, ty nazyw[[asz]] się, on / ona nazyw[[a]] się","Nazywam się Anna Nowak."],
+   ["Proszę przeliterować.","**proszę** + bezokolicznik: grzeczna prośba","Proszę przeliterować. Proszę powtórzyć."],
+   ["Sala numer…","po słowie *numer* liczba się nie zmienia","Sala numer pięć. Pokój numer osiem."]
+  ],
+  uwaga:"Do kolegi mówimy *ty*: *Jak się nazywasz?* Do osoby obcej, np. w recepcji: *Jak się pan / pani nazywa?*"},
  sytuacja:"Nowy uczeń przychodzi do szkoły językowej. W recepcji pracuje pani Ewa. Uczeń musi się przedstawić i przeliterować nazwisko.",
  role:[
   {kto:"Recepcjonistka", zadania:["Przywitaj się oficjalnie.","Zapytaj, jak się nazywa uczeń.","Poproś, żeby przeliterował nazwisko.","Powiedz numer sali (od 1 do 10).","Pożegnaj się."]},

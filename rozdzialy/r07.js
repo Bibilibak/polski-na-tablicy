@@ -42,6 +42,14 @@ cwiczenia: [
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:[{z:"Poproszę bilet normalny.",alt:["Poproszę normalny bilet."]},{z:"Ile kosztuje ta gazeta?",alt:["Ta gazeta ile kosztuje?"]},"Czy jest woda niegazowana?","Płacę kartą.",{z:"To wszystko, dziękuję.",alt:["Dziękuję, to wszystko."]},{z:"Ile kosztują te baterie?",alt:["Te baterie ile kosztują?"]}]},
 {sekcja:"K", typ:"scenka", tytul:"W kiosku na dworcu",
+ zasady:{r:[
+   ["Poproszę…","*poprosić, kupić, mieć* + **biernik** (kogo? co?): ż. **-ę**, m. i n. bez zmiany","Poproszę wod[[ę]] i bilet. Poproszę gazet[[ę]]."],
+   ["Ile kosztuje…? Ile kosztują…?","jedna rzecz: **kosztuje**; kilka rzeczy (l. mn.): **kosztują**","Ile kosztuje mapa? Ile kosztują gazety?"],
+   ["Płacę kartą.","*płacić* + **narzędnik**: kartą, gotówką","Płacę kart[[ą]]. / Płacę gotówk[[ą]]."],
+   ["bilet normalny czy ulgowy?","przymiotnik ma rodzaj rzeczownika","bilet normaln[[y]], woda gazowan[[a]]"]
+  ],
+  uwaga:"Rzeczowniki męskie żywotne mają w bierniku **-a**: *Mam brat[[a]], kot[[a]].* Nieżywotne się nie zmieniają: *Poproszę bilet.*"},
+
  sytuacja:"Turysta jest na dworcu w Krakowie. Musi kupić bilet na autobus, wodę i coś do czytania.",
  role:[
   {kto:"Klient", zadania:["Przywitaj się.","Poproś o bilet i wodę.","Zapytaj o cenę gazety albo mapy.","Zapytaj: *Ile płacę?*","Zapłać kartą i podziękuj."]},
@@ -60,7 +68,15 @@ cwiczenia: [
   ["Sprzedawca","Razem trzydzieści cztery złote."],
   ["Klient","Płacę kartą."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Ile to kosztuje?", polecenie:"Losuj kartę. Uczeń czyta cenę słowami. Grupa mówi, czy to drogo, czy tanio.",
+{sekcja:"K", typ:"rozmowa", tytul:"Ile to kosztuje?",
+ zasady:{r:[
+   ["Ile kosztuje…? Ile kosztują…?","jedna rzecz: **kosztuje**; l. mn. (*buty, słuchawki, kwiaty*): **kosztują**","Telefon kosztuje… Buty kosztują…"],
+   ["złoty","**1 złoty**; **2–4 złote** (też 22–24, 32–34…); **5–21 złotych** (też 25–31…)","Kawa kosztuje czternaście złot[[ych]]. Parasol kosztuje pięćdziesiąt dwa złot[[e]]."],
+   ["grosz","**1 grosz**; **2–4 grosze**; **5–21 groszy**","Bilet kosztuje cztery złote sześćdziesiąt (grosz[[y]])."],
+   ["setki","100 sto · 200 dwieście · 300 trzysta · 400 czterysta · 500 pięćset · 800 osiemset · 1000 tysiąc","899 zł: osiemset dziewięćdziesiąt dziewięć złot[[ych]]"]
+  ],
+  uwaga:"Forma *złoty / złote / złotych* zależy od ostatniego słowa liczby: *dwadzieścia dwa złot[[e]]*, ale *dwanaście złot[[ych]]*."},
+ polecenie:"Losuj kartę. Uczeń czyta cenę słowami. Grupa mówi, czy to drogo, czy tanio.",
  pytania:["📱 telefon – 899 zł","🎧 słuchawki – 249 zł","👟 buty – 320 zł","☕ kawa – 14 zł","📚 książka – 45 zł","🚲 rower – 1000 zł","🎫 bilet – 4,60 zł","🍫 czekolada – 6,99 zł","☂️ parasol – 52 zł","💐 kwiaty – 35 zł","🎒 plecak – 189 zł","🧃 sok – 3,50 zł"]},
 {sekcja:"G", typ:"zasada", tytul:"Biernik liczby pojedynczej",
  bloki:[

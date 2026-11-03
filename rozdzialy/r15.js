@@ -98,6 +98,13 @@ cwiczenia: [
   {uwaga:"*chciałbym* (mężczyzna) / *chciałabym* (kobieta) to tryb przypuszczający. Dokładnie poznamy go w rozdziale 26."}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Na poczcie",
+ zasady:{r:[
+   ["Chciałbym / chciałabym…","grzeczna prośba: **chciałbym** (m.) / **chciałabym** (ż.) + bezokolicznik","Chciałabym wysłać paczkę."],
+   ["dokąd?","**do** + **dopełniacz** (kraj, miasto)","do Hiszpani[[i]], do Niemiec, do Włoch, do Pragi"],
+   ["Poproszę pięć znaczków.","liczba + rzeczownik: 2–4 + mianownik l. mn.; 5 i więcej + **dopełniacz l. mn.**","dwa znaczk[[i]], pięć znaczk[[ów]], dziesięć kart[[ek]]"],
+   ["Jak długo idzie?","dzień: 1 dzień, 2–4 dni, 5 dni","Paczka idzie trzy dni."],
+   ["Czy może mi pan pomóc?","forma oficjalna + **proszę** / **czy może pan…?**","Czy może mi pani pomóc? Proszę tu wpisać adres."]
+  ]},
  sytuacja:"Studentka chce wysłać paczkę z prezentami do rodziny za granicą i kupić znaczki na kartki.",
  role:[
   {kto:"Klientka / klient", zadania:["Powiedz, co chcesz wysłać i dokąd.","Zapytaj o cenę i czas dostawy.","Poproś o pięć znaczków na kartki.","Poproś o pomoc z formularzem.","Zapłać."]},
@@ -115,6 +122,14 @@ cwiczenia: [
   ["Pracownik","Proszę. Tu jest formularz, proszę wpisać adres."],
   ["Klientka","Czy może mi pan pomóc? Nie wiem, co tu napisać."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Ile?", polecenie:"Losuj pytanie. W odpowiedzi użyj liczby i dobrej formy rzeczownika.",
+{sekcja:"K", typ:"rozmowa", tytul:"Ile?",
+ zasady:{r:[
+   ["Ile…?","**ile** + **dopełniacz l. mn.**","Ile książ[[ek]]? Ile języ[[ków]]? Ile osób?"],
+   ["dopełniacz l. mn.","m. zwykle **-ów**; ż. i n. zwykle bez końcówki; po miękkich **-i / -y**","język[[ów]], filiżan[[ek]], butel[[ek]], godzin, pokoj[[ów]] / poko[[i]]"],
+   ["liczba + rzeczownik","1 + mianownik l. poj.; 2–4 + mianownik l. mn.; 5 i więcej + dopełniacz l. mn.","jedna książka, trzy książk[[i]], pięć książ[[ek]]"],
+   ["dla kogo?","**dla** + **dopełniacz**","Kupuję prezent dla przyjaciel[[a]]. Kolacja dla sześciu osób."],
+   ["Co i ile kupujesz?","opakowania + dopełniacz","butelka wod[[y]], kilo jabł[[ek]], paczka makaron[[u]]"]
+  ],
+  uwaga:"Liczba 2–4 działa też w 22–24, 32–34…: *dwadzieścia dwie książk[[i]]*, ale *dwanaście książ[[ek]]*."}, polecenie:"Losuj pytanie. W odpowiedzi użyj liczby i dobrej formy rzeczownika.",
  pytania:["Ile filiżanek kawy pijesz dziennie?","Ile książek masz w domu?","Ile butelek wody pijesz dziennie?","Ile osób jest w twojej rodzinie?","Ile języków znasz?","Ile pokoi ma twoje mieszkanie?","Co kupujesz na urodziny przyjaciela?","Kiedy ostatnio byłeś / byłaś na poczcie? Co wysyłałeś / wysyłałaś?","Robisz kolację dla sześciu osób. Co i ile kupujesz?","Ile godzin śpisz?"]}
 ]};

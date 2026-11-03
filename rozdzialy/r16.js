@@ -93,6 +93,13 @@ cwiczenia: [
   {uwaga:"*Co ma być, to będzie* to przysłowie: przyszłości nie zmienimy, więc nie trzeba się martwić."}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Prognoza pogody i plany",
+ zasady:{r:[
+   ["Jaka będzie pogoda?","czas przyszły *być*: będ[[ę]], będzi[[esz]], będzi[[e]], będzi[[emy]], będzi[[ecie]], będ[[ą]]","Jutro będzie ciepło."],
+   ["Będzie słonecznie / będzie padać.","**będzie** + przysłówek albo bezokolicznik","Będzie słoneczn[[ie]], zimn[[o]]. Będzie padać."],
+   ["Będzie … stopni.","1 stopień, 2–4 stopnie, 5 i więcej stopni","Będzie dwadzieścia stopn[[i]]. Będą trzy stopni[[e]]."],
+   ["Jeśli będzie padać, to…","**jeśli** + czas przyszły, **to** + plan","Jeśli będzie padać, to pójdziemy do muzeum."],
+   ["Będziemy musieli…","czas przyszły: **będę** + bezokolicznik albo forma na **-ł / -ła / -li**","Będziemy musieli wstać wcześnie. Będziemy jechać rowerem."]
+  ]},
  sytuacja:"Piątek wieczorem. Dwie osoby planują wycieczkę w weekend. Jedna osoba czyta prognozę pogody w telefonie.",
  role:[
   {kto:"Osoba A: czytam prognozę", zadania:["Powiedz, jaka będzie pogoda w sobotę i w niedzielę (temperatura, deszcz, słońce).","Zaproponuj, co możecie robić przy takiej pogodzie.","Zgódź się na plan."]},
@@ -109,8 +116,20 @@ cwiczenia: [
   ["B","Wyjedziemy o siódmej?"],
   ["A","Zgoda! Co ma być, to będzie."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Plany i pogoda", polecenie:"Losuj pytanie i odpowiadaj w czasie przyszłym.",
+{sekcja:"K", typ:"rozmowa", tytul:"Plany i pogoda",
+ zasady:{r:[
+   ["Co będziesz robić?","czas przyszły złożony: **będę** + bezokolicznik albo forma na **-ł / -ła**","Będę pracować. / Będę pracował[[a]]."],
+   ["Jaka jest pogoda?","**jest / będzie** + przysłówek","Jest ciepł[[o]]. Będzie zimn[[o]] i będzie wiać."],
+   ["pory roku","**wiosną, latem, jesienią, zimą** (narzędnik)","Zimą w moim kraju jest bardzo zimno."],
+   ["W którym miesiącu?","**w** + miejscownik: w styczniu, w lutym, w marcu, w kwietniu, w maju, w czerwcu, w lipcu, w sierpniu, **we** wrześniu, w październiku, w listopadzie, w grudniu","Mam urodziny w maj[[u]]."],
+   ["Gdzie będziesz za pięć lat?","**za** + czas: za rok, za pięć lat","Za pięć lat będę mieszkać w Krakowie."]
+  ]}, polecenie:"Losuj pytanie i odpowiadaj w czasie przyszłym.",
  pytania:["Co będziesz robić jutro wieczorem?","Gdzie będziesz w wakacje?","Jaka będzie jutro pogoda?","Jaką porę roku lubisz najbardziej? Dlaczego?","W którym miesiącu masz urodziny?","Co będziesz musiał / musiała zrobić w tym tygodniu?","Gdzie będziesz mieszkać za pięć lat?","Jaka jest pogoda w twoim kraju zimą?","Czego będziesz się uczyć w przyszłym roku?","Co będziesz robić w sylwestra?"]},
-{sekcja:"K", typ:"rozmowa", tytul:"Andrzejkowe wróżby", polecenie:"Każdy uczeń losuje swoją wróżbę i czyta ją na głos. Potem mówi, czy to dobra wróżba i czy w nią wierzy.",
+{sekcja:"K", typ:"rozmowa", tytul:"Andrzejkowe wróżby",
+ zasady:{r:[
+   ["Będziesz…","czas przyszły złożony: **będę / będziesz** + bezokolicznik","Będę dużo podróżować. Będziesz mieć psa."],
+   ["Spotkasz… Poznasz… Pojedziesz…","przyszłość od czasowników dokonanych: odmiana jak w czasie teraźniejszym","spotka[[sz]], pozna[[sz]], dostanie[[sz]], pojedzie[[sz]]"],
+   ["Wierzysz w to?","reakcja: **Myślę, że… / Mam nadzieję, że… / To niemożliwe!**","Mam nadzieję, że to prawda!"]
+  ]}, polecenie:"Każdy uczeń losuje swoją wróżbę i czyta ją na głos. Potem mówi, czy to dobra wróżba i czy w nią wierzy.",
  pytania:["W przyszłym roku będziesz dużo podróżować.","Wkrótce spotkasz kogoś bardzo ważnego.","Będziesz mówić po polsku jak Polak!","Za rok będziesz mieszkać w nowym mieszkaniu.","Będziesz mieć psa albo kota.","W przyszłym miesiącu dostaniesz dobrą wiadomość.","Będziesz pracować w innym kraju.","Wkrótce będziesz mieć dużo pieniędzy.","Będziesz uczyć się nowego instrumentu.","W tym roku poznasz swoją wielką miłość.","Będziesz gotować najlepsze pierogi w rodzinie.","Wkrótce pojedziesz w podróż nad morze."]}
 ]};

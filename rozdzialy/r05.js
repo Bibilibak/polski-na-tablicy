@@ -102,9 +102,24 @@ cwiczenia: [
   {q:"Skąd jesteś?",o:["Jestem z Argentyny.","Jestem Argentyną.","Mieszkam z Argentyny."]},
   {q:"Jakiej jesteś narodowości?",o:["Jestem Włoszką.","Jestem z Włoszką.","Jestem Włochy."]}
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Gra: Kim jestem?", polecenie:"Uczeń losuje zawód (inni nie patrzą!) i pokazuje go gestem. Grupa pyta: *Czy jesteś lekarzem? Czy jesteś tancerką?* Uczeń odpowiada: *Tak, jestem… / Nie, nie jestem…*",
+{sekcja:"K", typ:"rozmowa", tytul:"Gra: Kim jestem?",
+ zasady:{r:[
+   ["Kim jesteś? Kim on jest?","*być* + **narzędnik** (kim? czym?)","Jestem lekarz[[em]]. Ona jest lekark[[ą]]."],
+   ["Czy jesteś…?","pytanie i odpowiedź też z narzędnikiem","Czy jesteś pilot[[em]]? – Nie, nie jestem pilot[[em]]."],
+   ["rodzaj męski i żeński","narzędnik: m. **-em** (po *k, g*: **-iem**), ż. **-ą**","nauczyciel[[em]], mechanik[[iem]] / nauczycielk[[ą]], tancerk[[ą]]"],
+   ["To jest… / On jest…","**to jest** + mianownik, ale **on jest** + narzędnik","To jest lekarz. On jest lekarz[[em]]."]
+  ],
+  uwaga:"Rzeczowniki męskie na **-a** mają w narzędniku **-ą**: *dentyst[[a]] → jestem dentyst[[ą]], artyst[[ą]]*."},
+ polecenie:"Uczeń losuje zawód (inni nie patrzą!) i pokazuje go gestem. Grupa pyta: *Czy jesteś lekarzem? Czy jesteś tancerką?* Uczeń odpowiada: *Tak, jestem… / Nie, nie jestem…*",
  pytania:["👩‍⚕️ lekarz / lekarka","👨‍🏫 nauczyciel / nauczycielka","👩‍🍳 kucharz / kucharka","👮 policjant / policjantka","💃 tancerz / tancerka","🎤 piosenkarz / piosenkarka","✈️ pilot / pilotka","💇 fryzjer / fryzjerka","📰 dziennikarz / dziennikarka","🦷 dentysta / dentystka","🎨 artysta / artystka","🔧 mechanik","👨‍💻 informatyk / informatyczka"]},
 {sekcja:"K", typ:"scenka", tytul:"Wywiad z instruktorem tańca",
+ zasady:{r:[
+   ["Kim pan / pani jest?","*być* + **narzędnik**","Jestem instruktor[[em]] / instruktork[[ą]] tańca."],
+   ["Jakiej jesteś narodowości?","narodowość po *jestem* też w **narzędniku**","Jestem Polak[[iem]] / Polk[[ą]], Hiszpan[[em]] / Hiszpank[[ą]]."],
+   ["Czym się pan / pani interesuje?","*interesować się* + **narzędnik**","Interesuję się muzyk[[ą]] i sport[[em]]."],
+   ["Ile pan / pani ma lat?","*mieć* + liczba + **rok / lata / lat**: 1 rok; 2–4 (22–24, 32–34…) lata; 5–21 (25–31…) lat","Mam dwadzieścia dwa lat[[a]]. Mam trzydzieści lat."],
+   ["pan / pani","forma oficjalna: **pan / pani** + czasownik w 3. osobie","Czym się pan interesuj[[e]]? Ile pani m[[a]] lat?"]
+  ]},
  sytuacja:"Dziennikarz szkolnej gazetki robi wywiad z nowym instruktorem tańca w szkole językowej.",
  role:[
   {kto:"Dziennikarz / dziennikarka", zadania:["Przywitaj się oficjalnie (pan / pani).","Zapytaj o imię i narodowość.","Zapytaj, ile pan / pani ma lat (grzecznie!).","Zapytaj o zawód i zainteresowania.","Podziękuj za rozmowę."]},

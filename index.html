@@ -124,6 +124,18 @@ a.row:hover{background:var(--panel)}
 .act-pager{display:flex;align-items:center;gap:.5rem;font-variant-numeric:tabular-nums;color:var(--muted);font-size:.95rem}
 .act-pager a,.act-pager span.ph{display:inline-grid;place-items:center;width:2.4rem;height:2.4rem;border:1px solid var(--line);border-radius:6px;background:var(--panel);text-decoration:none;font-size:1.3rem;color:var(--ink)}
 .act-pager span.ph{visibility:hidden}
+.act-tools{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.gbtn[aria-expanded="true"]{background:var(--chip);border-color:var(--ink)}
+/* panel zasad: po prawej obok ćwiczenia, przyklejony pod paskiem, przewija się sam */
+.act-body.open{display:grid;grid-template-columns:minmax(0,1fr) minmax(17rem,24rem);gap:1.5rem;align-items:start}
+.gpanel{position:sticky;top:4.5rem;max-height:calc(100vh - 5.5rem);overflow-y:auto;background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--g);border-radius:10px;padding:1rem 1.1rem;display:grid;gap:.75rem;align-content:start}
+.gr{display:grid;gap:.2rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+.gr:last-of-type{border-bottom:0;padding-bottom:0}
+.gr-z{font-size:1.1rem}
+.gr-q{color:var(--muted);font-size:.95rem}
+.gr-e{font-size:1.05rem;border-left:3px solid var(--g);padding-left:.6rem}
+.gpanel .note{font-size:.95rem}
+@media (max-width:900px){.act-body.open{grid-template-columns:1fr}.gpanel{position:static;max-height:none}}
 .act-head{margin:1.25rem 0 1.5rem;display:grid;gap:.5rem}
 .act-head h1{font-size:clamp(1.8rem,4.2vw,2.6rem);font-weight:800}
 .tag{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--c)}
@@ -354,8 +366,7 @@ function home(){
   <div class="meter"><div class="meter-bar"><span style="width:${(nDone/SPIS.length*100).toFixed(1)}%"></span></div>
   <span>Omówione rozdziały: <b>${nDone}</b> z ${SPIS.length} · materiały gotowe dla ${nReady} ${plural(nReady,"rozdziału","rozdziałów","rozdziałów")}</span></div></div>
   <div class="cards g-top">
-   <a class="card sk-g" href="#przypadki"><span class="ty">Gramatyka · tabele</span><span class="ct">Siedem przypadków</span><span class="cn">pytania, wzory odmiany rzeczowników, przymiotników i zaimków</span></a>
-   <a class="card sk-g" href="#gramatyka"><span class="ty">Gramatyka · zasady</span><span class="ct">Wszystkie zasady gramatyczne</span><span class="cn">${GLIST.length} ${plural(GLIST.length,"zasada","zasady","zasad")} z całej książki, ułożone tematami</span></a>
+   <a class="card sk-g" href="#gramatyka"><span class="ty">Gramatyka</span><span class="ct">Wszystkie zasady gramatyczne</span><span class="cn">tabele siedmiu przypadków i ${GLIST.length} ${plural(GLIST.length,"zasada","zasady","zasad")} z całej książki, ułożone tematami</span></a>
   </div>
   <div class="toc-head"><span></span><span>Rozdział</span><span><i class="m k">K</i>Komunikacja</span><span><i class="m l">L</i>Leksyka</span><span><i class="m g">G</i>Gramatyka</span></div><ol class="toc">`;
   for(const c of SPIS){
@@ -426,11 +437,23 @@ function activity(c,R,i,g){
   const pager=g!=null
     ?`${g>0?`<a href="#g${g-1}" aria-label="Poprzednia zasada">‹</a>`:`<span class="ph">‹</span>`}<span>${g+1} / ${GLIST.length}</span>${g<GLIST.length-1?`<a href="#g${g+1}" aria-label="Następna zasada">›</a>`:`<span class="ph">›</span>`}`
     :`${i>0?`<a href="#r${c.id}-${i-1}" aria-label="Poprzednie ćwiczenie">‹</a>`:`<span class="ph">‹</span>`}<span>${i+1} / ${acts.length}</span>${i<acts.length-1?`<a href="#r${c.id}-${i+1}" aria-label="Następne ćwiczenie">›</a>`:`<span class="ph">›</span>`}`;
+  /* a.zasady = {r:[[kiedy, zasada, przykład], …], uwaga?}: panel obok ćwiczenia, domyślnie ukryty */
+  const Z=a.zasady;
+  const gBtn=Z?`<button type="button" class="btn gbtn" id="zBtn" aria-expanded="false" aria-controls="zPanel">Pokaż zasady</button>`:"";
+  const gPanel=Z?`<aside class="gpanel" id="zPanel" hidden aria-label="Zasady gramatyczne"><span class="lbl">Zasady w tym ćwiczeniu</span>
+    ${Z.r.map(([q,z,e])=>`<div class="gr"><div class="gr-z">${fmt(z)}</div>${q?`<div class="gr-q">${fmt(q)}</div>`:""}${e?`<div class="gr-e">${fmt(e)}</div>`:""}</div>`).join("")}
+    ${Z.uwaga?`<aside class="note"><strong>Uwaga!</strong> ${fmt(Z.uwaga)}</aside>`:""}</aside>`:"";
   app.innerHTML=`<div class="act sk-${k}">
    <div class="act-nav">${back}
-    <div class="act-pager">${pager}</div></div>
+    <div class="act-tools">${gBtn}<div class="act-pager">${pager}</div></div></div>
    <header class="act-head"><span class="tag">${g!=null?esc(GLIST[g].temat):SEK[a.sekcja]+" · "+TYP[a.typ]}</span><h1>${fmt(a.tytul)}</h1>${g!=null?`<p class="gsrc">Z rozdziału <a href="#r${c.id}">${esc(label(c))}</a></p>`:""}${a.polecenie?`<p class="instr">${fmt(a.polecenie)}</p>`:""}</header>
-   <div class="stage" id="stage"></div></div>`;
+   <div class="act-body" id="aBody"><div class="stage" id="stage"></div>${gPanel}</div></div>`;
+  if(Z){const b=$("#zBtn"),p=$("#zPanel"),body=$("#aBody");
+    /* panel mieści się w oknie od miejsca, w którym się zaczyna: strona się nie wydłuża, przewija się tylko panel */
+    const fit=()=>{if(p.hidden||!p.isConnected)return;p.style.maxHeight="";if(getComputedStyle(p).position!=="sticky")return;
+      p.style.maxHeight=Math.max(240,innerHeight-Math.max(p.getBoundingClientRect().top,72)-16)+"px"};
+    b.onclick=()=>{p.hidden=!p.hidden;body.classList.toggle("open",!p.hidden);b.setAttribute("aria-expanded",!p.hidden);b.textContent=p.hidden?"Pokaż zasady":"Ukryj zasady";fit()};
+    window.onresize=fit}
   keyHandler=(RENDER[a.typ]||RENDER.zasada)($("#stage"),a)||null;
   window.scrollTo(0,0);
 }

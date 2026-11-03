@@ -97,6 +97,14 @@ cwiczenia: [
   {ex:["Marzę o domu z ogrodem.","Marzę o mieszkaniu w centrum miasta.","Marzę o podróży dookoła świata."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Pokaż mi swoje mieszkanie",
+ zasady:{r:[
+   ["W salonie jest…","**w / na** + **miejscownik**: m. i n. **-e** albo **-u**; ż. **-e** albo **-i / -y**","w salon[[ie]], w łazien[[ce]], w kuchn[[i]], w pokoj[[u]]"],
+   ["Co gdzie stoi?","**stoi** (szafa, stół), **wisi** (obraz, lampa), **leży** (dywan, książka)","Na ścian[[ie]] wisi obraz. Na podłodz[[e]] leży dywan."],
+   ["Brakuje mi…","**brakować** + **dopełniacz**","Brakuje mi szaf[[y]] i lamp[[y]]."],
+   ["Marzę o…","**marzyć o** + **miejscownik**","Marzę o duż[[ym]] balkon[[ie]]."],
+   ["Na którym piętrze?","**na** + miejscownik","Mieszkam na trzec[[im]] piętrz[[e]]."]
+  ],
+  uwaga:"W miejscowniku spółgłoska często się zmienia: *stół → na stol[[e]], podłoga → na podłodz[[e]], łazienka → w łazien[[ce]]*."},
  sytuacja:"Osoba A właśnie przeprowadziła się do nowego mieszkania i zaprasza przyjaciela. Oprowadza go po mieszkaniu.",
  role:[
   {kto:"Osoba A: gospodarz", zadania:["Przywitaj gościa i pokaż pomieszczenia.","Powiedz, co gdzie stoi (*W salonie jest…*).","Powiedz, co ci się podoba, a czego jeszcze brakuje.","Powiedz, o czym marzysz."]},
@@ -114,6 +122,13 @@ cwiczenia: [
   ["B","Super. Brakuje ci czegoś?"],
   ["A","Balkonu! Marzę o mieszkaniu z dużym balkonem."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Mój dom", polecenie:"Losuj pytanie. Odpowiadaj z przyimkami i miejscownikiem.",
+{sekcja:"K", typ:"rozmowa", tytul:"Mój dom",
+ zasady:{r:[
+   ["Opisz pokój. Co jest w kuchni?","**w / na** + **miejscownik**: m. i n. **-e** albo **-u**; ż. **-e** albo **-i / -y**","W moim pokoj[[u]] jest łóżko. W kuchn[[i]] stoi stół."],
+   ["Co wisi? Co leży?","**stoi, wisi, leży**","Na biurk[[u]] leży laptop. Na ścian[[ie]] wisi mapa."],
+   ["Gdzie lubisz czytać?","**przy** + **miejscownik** = blisko czegoś","Lubię czytać w fotel[[u]] przy okn[[ie]]."],
+   ["O czym marzysz?","**marzyć o** + **miejscownik**","Marzę o dom[[u]] z ogrodem."],
+   ["Na którym piętrze mieszkasz?","**na** + miejscownik","Mieszkam na parterze / na drugi[[m]] piętrz[[e]]."]
+  ]}, polecenie:"Losuj pytanie. Odpowiadaj z przyimkami i miejscownikiem.",
  pytania:["Opisz swój pokój.","Co jest w twojej kuchni?","Gdzie lubisz czytać?","Na którym piętrze mieszkasz?","Gdzie w twoim mieszkaniu jest najprzyjemniej?","O czym marzysz?","Co wisi na ścianie w twoim pokoju?","Co leży teraz na twoim biurku?","Gdzie pracujesz albo się uczysz w domu?","Jakie mieszkanie jest twoim zdaniem idealne?"]}
 ]};

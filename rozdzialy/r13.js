@@ -92,6 +92,15 @@ cwiczenia: [
   {z:"Na śniadanie jadłem jajecznicę.",alt:["Jadłem jajecznicę na śniadanie.","Jadłem na śniadanie jajecznicę."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Poniedziałek rano w pracy",
+ zasady:{r:[
+   ["Co robiłeś / robiłaś?","czas przeszły: on **-ł**, ona **-ła**; ja: **-łem** (m.) / **-łam** (ż.); ty: **-łeś** / **-łaś**","Co robił[[eś]]? – Odpoczywał[[am]] w domu."],
+   ["Gdzie byłeś / byłaś?","*być*: był[[em]] / był[[am]], był[[eś]] / był[[aś]]","Byłam w kinie. Byłem u babci."],
+   ["Poszedłem / poszłam","*pójść* nieregularny: poszed[[łem]] / posz[[łam]], on posze[[dł]], ona posz[[ła]]","W sobotę poszłam na koncert."],
+   ["Co jadłeś / jadłaś?","*jeść* nieregularny: jad[[łem]] / jad[[łam]], on jadł, ona jadła","Jadłam pizzę z przyjaciółmi."],
+   ["Jak było?","**było** + przysłówek","Było super / fajnie / nudno."]
+  ],
+  uwaga:"Osoba A mówi w formie żeńskiej (*byłam, poszłam*), osoba B w formie męskiej (*byłem, poszedłem*)."},
+
  sytuacja:"Poniedziałek, godzina ósma. Dwie osoby z pracy piją kawę w kuchni i opowiadają o weekendzie.",
  role:[
   {kto:"Pani Agnieszka", zadania:["Zapytaj, co kolega robił w weekend.","Opowiedz o swoim weekendzie: gdzie byłaś, z kim, co jadłaś (forma żeńska!).","Zapytaj: *Jak było?*"]},
@@ -107,6 +116,14 @@ cwiczenia: [
   ["Michał","Co jadłaś?"],
   ["Agnieszka","Rosół i pierogi. Babcia gotuje najlepiej!"]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Co robiłeś? Co robiłaś?", polecenie:"Losuj pytanie i odpowiadaj w czasie przeszłym. Uważaj na formę: kobieta czy mężczyzna?",
+{sekcja:"K", typ:"rozmowa", tytul:"Co robiłeś? Co robiłaś?",
+ zasady:{r:[
+   ["Co robiłeś / robiłaś?","czas przeszły: ja **-łem** (m.) / **-łam** (ż.); ty **-łeś** / **-łaś**","Wczoraj czytał[[em]] / czytał[[am]] książkę."],
+   ["Co widziałeś? Co musiałeś?","czasowniki na **-eć**: **e → a** w czasie przeszłym","widzieć → widzi[[ałem]] / widzi[[ałam]]; musieć → musi[[ałem]] / musi[[ałam]]"],
+   ["Gdzie poszedłeś / poszłaś?","*pójść*: poszed[[łem]] / posz[[łam]]","Po pracy poszedłem do sklepu."],
+   ["Co jadłeś / jadłaś?","*jeść*: jad[[łem]] / jad[[łam]]","Na śniadanie jadłam jajecznicę."],
+   ["Z kim rozmawiałeś?","**z** + **narzędnik**","Rozmawiałam z mam[[ą]] i z brat[[em]]."]
+  ]},
+ polecenie:"Losuj pytanie i odpowiadaj w czasie przeszłym. Uważaj na formę: kobieta czy mężczyzna?",
  pytania:["Co robiłeś / robiłaś wczoraj wieczorem?","Gdzie byłeś / byłaś w weekend?","Co jadłeś / jadłaś na śniadanie?","Kiedy ostatnio byłeś / byłaś w kinie? Jaki film?","Co robiłeś / robiłaś w zeszłe wakacje?","Gdzie poszedłeś / poszłaś po pracy?","Z kim rozmawiałeś / rozmawiałaś wczoraj?","Co ciekawego widziałeś / widziałaś w tym tygodniu?","O której wstałeś / wstałaś dzisiaj?","Co musiałeś / musiałaś zrobić wczoraj?"]}
 ]};

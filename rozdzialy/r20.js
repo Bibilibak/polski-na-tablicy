@@ -81,6 +81,13 @@ cwiczenia: [
   {ex:["Pociąg do Gdańska jest opóźniony o dwadzieścia minut.","Pociąg z Warszawy wjedzie na tor pierwszy przy peronie drugim."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"W kasie biletowej",
+ zasady:{r:[
+   ["Poproszę bilet do…","**do** + **dopełniacz**","Poproszę bilet do Toruni[[a]], do Krakow[[a]], do Gdańsk[[a]]."],
+   ["Z którego peronu?","**z** + **dopełniacz**","Z peron[[u]] trzeciego, tor drugi."],
+   ["przesiadka w…","**w** + **miejscownik**","Przesiadka w Kutn[[ie]], w Poznani[[u]]."],
+   ["O której jest pociąg?","**o** + liczebnik porządkowy","Pociąg jest o dziesiąt[[ej]] piętnaście."],
+   ["Czy muszę się przesiadać?","*musieć* + bezokolicznik","Nie, to pociąg bezpośredni."]
+  ]},
  sytuacja:"Dworzec Warszawa Centralna. Turystka chce jechać do Torunia, ale nie wie, czy jest pociąg bezpośredni.",
  role:[
   {kto:"Podróżna / podróżny", zadania:["Poproś o bilet do Torunia.","Powiedz: w jedną stronę czy powrotny, ulga czy normalny.","Zapytaj o godzinę odjazdu i peron.","Zapytaj o przesiadkę.","Zapłać."]},
@@ -100,6 +107,13 @@ cwiczenia: [
  ]},
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:[{z:"Poproszę bilet do Krakowa w jedną stronę.",alt:["Poproszę bilet w jedną stronę do Krakowa."]},{z:"Z którego peronu odjeżdża pociąg?",alt:["Z którego peronu pociąg odjeżdża?"]},"Pociąg jest opóźniony o dziesięć minut.","Czy muszę się przesiadać?",{z:"W wakacje jedziemy nad morze.",alt:["Jedziemy nad morze w wakacje.","Jedziemy w wakacje nad morze."]},"Podróże kształcą."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Podróże", polecenie:"Losuj pytanie. Uważaj na *gdzie? dokąd? skąd?*",
+{sekcja:"K", typ:"rozmowa", tytul:"Podróże",
+ zasady:{r:[
+   ["Gdzie byłeś / byłaś?","**gdzie?** **w** + miejscownik; **nad** + narzędnik; **w** górach","Byłam w Gdańsk[[u]], nad morz[[em]], w gór[[ach]]."],
+   ["Dokąd chcesz pojechać?","**dokąd?** **do** + dopełniacz; **nad** + biernik; **w** góry","Chcę pojechać do Krakow[[a]], nad morz[[e]], w gór[[y]]."],
+   ["Skąd wróciłeś / wróciłaś?","**skąd?** **z** + dopełniacz; **znad** morza","Wróciłem z Zakopan[[ego]], z gór, znad morz[[a]]."],
+   ["Jak podróżujesz?","środek transportu: **narzędnik**","Podróżuję pociąg[[iem]], autobus[[em]], samochod[[em]]."],
+   ["Gdzie leży twoje miasto?","**na** północy / południu / wschodzie / zachodzie (miejscownik)","Moje miasto leży na połudn[[iu]] kraju."]
+  ]}, polecenie:"Losuj pytanie. Uważaj na *gdzie? dokąd? skąd?*",
  pytania:["Gdzie byłeś / byłaś w Polsce?","Dokąd chcesz pojechać w przyszłym roku?","Wolisz góry czy morze? Dlaczego?","Jak podróżujesz: pociągiem, autobusem czy samochodem?","Jaka atrakcja w twoim kraju jest najciekawsza?","Gdzie leży twoje miasto?","Skąd wróciłeś / wróciłaś ostatnio?","Opowiedz o najlepszej podróży w twoim życiu.","Co zawsze zabierasz w podróż?","Co znaczy powiedzenie „Podróże kształcą”?"]}
 ]};

@@ -66,11 +66,32 @@ cwiczenia: [
   "Nie zgadzam się.",
   "Masz rację!"
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Zgadzasz się?", polecenie:"Losuj zdanie. Uczniowie mówią, czy się zgadzają, i dodają swoje zdanie: *Zgadzam się / Nie zgadzam się. Moim zdaniem…*",
+{sekcja:"K", typ:"rozmowa", tytul:"Zgadzasz się?",
+ zasady:{r:[
+   ["Polski jest łatwy.","opinia: **Moim zdaniem…**, **Myślę, że…**","Moim zdaniem polski jest trudny."],
+   ["Zgadzasz się?","*zgadzać się*: zgadz[[am]] się, zgadz[[asz]] się","Zgadzam się. / Nie zgadzam się, bo…"],
+   ["Kawa jest smaczna.","przymiotnik ma rodzaj rzeczownika: **-y / -i** (m.), **-a** (ż.), **-e** (n.)","Kot jest leniw[[y]]. Zima jest smutn[[a]]. Kino jest ciekaw[[e]]."],
+   ["To nieprawda!","przeczenie: **nie** przed czasownikiem","Pizza nie jest zdrowa. Polski nie jest łatwy."]
+  ]},
+ polecenie:"Losuj zdanie. Uczniowie mówią, czy się zgadzają, i dodają swoje zdanie: *Zgadzam się / Nie zgadzam się. Moim zdaniem…*",
  pytania:["Polski jest łatwy.","Poniedziałek jest nudny.","Kraków jest ładny.","Matematyka jest trudna.","Kawa jest smaczna.","Kot jest leniwy.","Pies jest mądry.","Zima jest smutna.","Nauczyciel musi być spokojny.","Dobry przyjaciel jest zabawny.","Lekcja online jest wygodna.","Pizza jest zdrowa."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Opisz osobę", polecenie:"Losuj kartę i opisz osobę: wygląd i charakter. Ostatnia karta to zagadka: opisz kogoś z grupy, inni zgadują.",
+{sekcja:"K", typ:"rozmowa", tytul:"Opisz osobę",
+ zasady:{r:[
+   ["Jaki on jest? Jaka ona jest?","**jaki** (m.) / **jaka** (ż.) + przymiotnik w tym samym rodzaju","On jest wysok[[i]] i spokojn[[y]]. Ona jest wesoł[[a]]."],
+   ["Jak wygląda?","**ma** + włosy / oczy: przymiotnik w liczbie mnogiej na **-e / -ie**","Ma krótk[[ie]] włosy i niebiesk[[ie]] oczy."],
+   ["Co robi? Co lubi?","koniugacja **-ę, -isz / -ysz**: mów[[ię]], mów[[isz]], mów[[i]]","Ona dużo mów[[i]]. On lub[[i]] muzykę."],
+   ["bardzo, trochę, ale","**bardzo / trochę** + przymiotnik; **ale** łączy dobrą i złą cechę","Jest bardzo miły, ale trochę leniwy."]
+  ]},
+ polecenie:"Losuj kartę i opisz osobę: wygląd i charakter. Ostatnia karta to zagadka: opisz kogoś z grupy, inni zgadują.",
  pytania:["Twój najlepszy przyjaciel albo najlepsza przyjaciółka.","Twoja mama albo twój tata.","Twój ulubiony aktor albo ulubiona aktorka.","Twój nauczyciel ze szkoły.","Twój sąsiad albo twoja sąsiadka.","Twój ulubiony bohater z filmu.","Zagadka: opisz osobę z grupy. Kto to jest?"]},
 {sekcja:"K", typ:"scenka", tytul:"Szukam współlokatora",
+ zasady:{r:[
+   ["Jaki on jest?","przymiotnik w rodzaju męskim: **-y / -i**","On jest spokojn[[y]], pracowit[[y]] i wysok[[i]]."],
+   ["Czy on jest…?","**czy** + zdanie; odpowiedź *Tak, jest… / Nie, nie jest…*","Czy on jest pracowity? – Nie, nie jest pracowity."],
+   ["Skąd jest?","**z** + **dopełniacz**","Jest z Hiszpani[[i]], z Gdańsk[[a]]."],
+   ["Moim zdaniem…","opinia: **Moim zdaniem…**, **Myślę, że…**","Myślę, że to dobry współlokator."],
+   ["dobre i złe cechy","**bardzo / trochę** + przymiotnik, **ale**","Jest bardzo miły, ale trochę głośny."]
+  ]},
  sytuacja:"Osoba A szuka współlokatora do mieszkania. Osoba B ma kolegę, który szuka pokoju. A pyta, jaki jest ten kolega.",
  role:[
   {kto:"Osoba A: szukam współlokatora", zadania:["Zapytaj, jak kolega ma na imię i skąd jest.","Zapytaj, jaki on jest.","Zapytaj: *Czy on jest spokojny? Czy jest pracowity?*","Powiedz, co myślisz."]},

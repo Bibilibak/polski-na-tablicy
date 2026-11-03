@@ -71,6 +71,13 @@ cwiczenia: [
   {q:"„Brawo, dobra robota!”",o:["aprobata 👍","dezaprobata 👎"]},{q:"„Moim zdaniem to przesada.”",o:["dezaprobata 👎","aprobata 👍"]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"U fryzjera",
+ zasady:{r:[
+   ["Chciałabym się ostrzyc.","**chciałbym / chciałabym** + bezokolicznik","Chciałabym podciąć włosy. Chciałbym się ostrzyc."],
+   ["Proszę skrócić o…","**o** + **biernik** (ile?)","Proszę skrócić o dwa centymetry."],
+   ["Może krócej?","stopniowanie przysłówków: krótko – **krócej** – **naj**krócej, długo – **dłużej**","Proszę trochę krócej z boku."],
+   ["Za krótko!","**za** + przysłówek = bardziej niż trzeba","Jest za krótko! Trochę za ciemno."],
+   ["Tak może być?","aprobata i dezaprobata","Świetnie! Bardzo mi się podoba. / Niestety, nie podoba mi się."]
+  ]},
  sytuacja:"Klientka (albo klient) idzie do fryzjera przed ważną rozmową o pracę. Chce zmienić fryzurę, ale nie za bardzo.",
  role:[
   {kto:"Klient / klientka", zadania:["Powiedz, co chcesz: ostrzyc, podciąć, pofarbować?","Powiedz, o ile skrócić.","Na końcu oceń fryzurę: aprobata albo dezaprobata.","Zapytaj o cenę."]},
@@ -89,12 +96,26 @@ cwiczenia: [
   ["Fryzjerka","Dziękuję! Osiemdziesiąt złotych."]
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Zapis na siłownię",
+ zasady:{r:[
+   ["Chciałbym się zapisać.","**chciałbym / chciałabym** + bezokolicznik; **zapisać się na** + biernik","Chciałabym się zapisać na jog[[ę]] / na zumb[[ę]]."],
+   ["Chcę ćwiczyć częściej.","stopniowanie przysłówków: często – **częściej**, szybko – **szybciej**, wolno – **wolniej**, dobrze – **lepiej**","Chcę ćwiczyć częściej, ale wolniej."],
+   ["Lepiej zacząć powoli.","**lepiej** + bezokolicznik = rada","Lepiej zacząć od dwóch treningów w tygodniu."],
+   ["W jakich godzinach?","**od** … **do** … + liczebnik w dopełniaczu","Jest otwarte od szóst[[ej]] do dwudziest[[ej]] drugiej."],
+   ["Jak często?","**raz / dwa razy w** tygodniu","Chcę ćwiczyć trzy razy w tygodniu."]
+  ]},
  sytuacja:"Osoba chce zacząć ćwiczyć. Przychodzi do recepcji studia fitness.",
  role:[
   {kto:"Klient", zadania:["Powiedz, że chcesz się zapisać.","Zapytaj o karnet i godziny otwarcia.","Zapytaj o zajęcia grupowe.","Powiedz, jak często chcesz ćwiczyć."]},
   {kto:"Recepcjonista", zadania:["Przedstaw karnety (miesięczny, na dziesięć wejść).","Opowiedz o zajęciach (joga, zumba, trening siłowy).","Zaproponuj trenera personalnego.","Daj radę: *Lepiej zacząć wolniej…*"]}
  ],
  zwroty:["Chciałbym się zapisać.","Ile kosztuje karnet?","W jakich godzinach jest otwarte?","Jakie są zajęcia?","Chcę ćwiczyć częściej.","Lepiej zacząć powoli."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Wygląd i sport", polecenie:"Losuj pytanie i odpowiadaj.",
+{sekcja:"K", typ:"rozmowa", tytul:"Wygląd i sport",
+ zasady:{r:[
+   ["Opisz wygląd.","*być* + przymiotnik; *mieć* + **biernik**","Jestem wysoki / wysoka. Mam krótk[[ie]] włosy i zielon[[e]] oczy."],
+   ["Kto jest do ciebie podobny?","**podobny do** + **dopełniacz**","Jestem podobn[[a]] do mam[[y]]. Brat jest podobny do tat[[y]]."],
+   ["Kto biega najszybciej?","przysłówek: szybko – **szybciej** – **naj**szybciej; dobrze – **lepiej** – **naj**lepiej","Mój brat biega najszybciej."],
+   ["lepiej niż rok temu","porównanie: przysłówek w stopniu wyższym + **niż**","Mówię po polsku lepiej niż rok temu."],
+   ["Ćwiczysz? Jak często?","**raz w** tygodniu, **codziennie**, **rzadko**","Ćwiczę dwa razy w tygodniu."]
+  ]}, polecenie:"Losuj pytanie i odpowiadaj.",
  pytania:["Opisz swój wygląd.","Opisz znaną osobę. Grupa zgaduje, kto to.","Jak często chodzisz do fryzjera?","Kto w twojej rodzinie jest do ciebie podobny?","Ćwiczysz? Jak często?","Kto w twojej rodzinie biega najszybciej?","Czy wygląd jest ważny? Dlaczego?","Co znaczy przysłowie „Jak cię widzą, tak cię piszą”?","Co robisz teraz lepiej niż rok temu?","Kto w grupie mówi po polsku najszybciej?"]}
 ]};

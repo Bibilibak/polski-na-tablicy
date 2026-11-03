@@ -93,6 +93,14 @@ cwiczenia: [
   {q:"Rodzice ___, żeby dzieci miały dobre życie.",o:["stają na głowie","trzymają język za zębami","wstają lewą nogą"]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"U lekarza",
+ zasady:{r:[
+   ["Co panu / pani dolega?","**dolegać** + celownik (komu?)","Co panu dolega? – Boli mnie gardło."],
+   ["Boli mnie…","**boli mnie** + jedna rzecz; **bolą mnie** + l. mn.","Boli mnie głowa. Bolą mnie plecy."],
+   ["Mam gorączkę.","*mieć* + **biernik**","Mam gorączk[[ę]], katar i kaszel."],
+   ["Od kiedy?","**od** + **dopełniacz**","Od wczoraj. Od trzech dn[[i]]. Od poniedziałk[[u]]."],
+   ["Powinien pan…","**powinien** (on, pan) / **powinna** (ona, pani) + bezokolicznik","Powinien pan leżeć w łóżku. Powinna pani dużo pić."],
+   ["Jak brać lekarstwa?","**… razy dziennie**, **przed / po** jedzeniu","Trzy razy dziennie po jedzeniu."]
+  ]},
  sytuacja:"Pacjent źle się czuje od kilku dni. Idzie do lekarza rodzinnego.",
  role:[
   {kto:"Pacjent / pacjentka", zadania:["Powiedz, co ci dolega (trzy objawy).","Powiedz, od kiedy.","Zapytaj, jak brać lekarstwa.","Poproś o zwolnienie do pracy."]},
@@ -110,6 +118,13 @@ cwiczenia: [
   ["Pacjent","Czy mogę dostać zwolnienie do pracy?"],
   ["Lekarka","Tak, na trzy dni. Szybkiego powrotu do zdrowia!"]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Co powinien zrobić?", polecenie:"Losuj problem. Grupa daje rady z *powinien / powinna / powinni*.",
+{sekcja:"K", typ:"rozmowa", tytul:"Co powinien zrobić?",
+ zasady:{r:[
+   ["Co powinien zrobić?","**powinien / powinna** + bezokolicznik","Kolega powinien odpocząć. Koleżanka powinna wcześniej iść spać."],
+   ["odmiana","ja powini[[enem]] / powinn[[am]] · ty powini[[eneś]] / powinn[[aś]] · on powinien · ona powinn[[a]] · oni powinn[[i]] · one powinn[[y]]","Powinieneś mniej grać w gry."],
+   ["nie powinien","**nie powinien** + bezokolicznik","Nie powinien pić kawy wieczorem."],
+   ["Babcię bolą plecy.","**boleć** + **biernik** osoby (kogo?)","Babci[[ę]] bolą plecy. Brata boli głowa."],
+   ["rada","**Może…?** / **Lepiej** + bezokolicznik","Może powinna pójść do lekarza? Lepiej zacząć od spaceru."]
+  ]}, polecenie:"Losuj problem. Grupa daje rady z *powinien / powinna / powinni*.",
  pytania:["Kolega ma katar i gorączkę.","Koleżanka nie może spać w nocy.","Przyjaciel jest zestresowany przed egzaminem.","Twój brat ciągle gra w gry komputerowe.","Sąsiadka chce zacząć zdrowo żyć.","Turysta pierwszy raz przyjeżdża do Polski.","Student nie ma pieniędzy na koniec miesiąca.","Babcię bolą plecy.","Kolega ma dwie lewe ręce, a musi złożyć szafę.","Koleżanka chce szybko nauczyć się polskiego."]}
 ]};

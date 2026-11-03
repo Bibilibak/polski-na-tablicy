@@ -95,6 +95,14 @@ cwiczenia: [
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:[{z:"Ile kosztują te pomidory?",alt:["Te pomidory ile kosztują?"]},"Osiem złotych za kilo.","Czy truskawki są świeże?",{z:"Lubisz marchewkę?",alt:["Marchewkę lubisz?"]},"Poproszę te czerwone jabłka.","Te banany są bardzo słodkie."]},
 {sekcja:"K", typ:"scenka", tytul:"Na targu",
+ zasady:{r:[
+   ["Ile kosztują…?","l. mn. → **kosztują**","Ile kosztują pomidory? Ile kosztuje arbuz?"],
+   ["Poproszę…","liczba mnoga rzeczy: biernik = mianownik","Poproszę jabłk[[a]] i truskawk[[i]]."],
+   ["kilo, pół kilo","**kilo / pół kilo** + **dopełniacz** l. mn. (zapamiętaj jako zwrot)","kilo pomidor[[ów]], pół kilo truskaw[[ek]], kilo jabł[[ek]]"],
+   ["Czy są świeże?","przymiotnik w l. mn. (rzeczy): **-e / -ie**","Są śwież[[e]] i słodk[[ie]]!"],
+   ["te pomidory","l. mn. rzeczy: **te** + rzeczownik","te pomidory, te jabłka, te gruszki"]
+  ]},
+
  sytuacja:"Sobota rano, targ w Krakowie. Klient chce kupić owoce i warzywa na sałatkę i deser.",
  role:[
   {kto:"Klient", zadania:["Przywitaj się.","Zapytaj o ceny dwóch produktów.","Zapytaj, czy owoce są świeże / słodkie.","Kup trzy rzeczy (kilo, pół kilo, sztuka).","Zapłać i podziękuj."]},
@@ -112,6 +120,14 @@ cwiczenia: [
   ["Klient","Nie, to wszystko. Ile płacę?"],
   ["Sprzedawca","Razem szesnaście złotych."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Owoce, warzywa, zakupy", polecenie:"Losuj pytanie i odpowiadaj. Uważaj na liczbę mnogą!",
+{sekcja:"K", typ:"rozmowa", tytul:"Owoce, warzywa, zakupy",
+ zasady:{r:[
+   ["Jakie owoce lubisz?","l. mn.: m. i ż. **-y**, po *k, g* **-i**, po spółgłoskach miękkich i *cz, sz, rz, ż* **-e**; n. **-a**","banan[[y]], truskawk[[i]], pomarańcz[[e]], jabłk[[a]]"],
+   ["Co kupujesz?","*lubić, kupować, jeść* + **biernik**; w l. mn. rzeczy biernik = mianownik","Kupuję pomidory i ogórki. Lubię marchewk[[ę]]."],
+   ["Gdzie robisz zakupy?","stałe zwroty: **w** sklepie, **w** supermarkecie, **na** targu","Robię zakupy w supermarkecie albo na targu."],
+   ["drogie czy tanie?","przymiotnik w l. mn. (rzeczy): **-e / -ie**","Truskawki są drog[[ie]], a jabłka są tan[[ie]]."],
+   ["Wolisz… czy…?","*woleć* + biernik; **bo** + powód","Wolę targ, bo owoce są świeże."]
+  ]},
+ polecenie:"Losuj pytanie i odpowiadaj. Uważaj na liczbę mnogą!",
  pytania:["Jakie owoce lubisz?","Jakie warzywa często jesz?","Lubisz marchewkę?","Gdzie robisz zakupy?","Co zwykle kupujesz w supermarkecie?","Jakie owoce są popularne w twoim kraju?","Wolisz targ czy supermarket? Dlaczego?","Co teraz jest w twojej lodówce?","Jakie owoce i warzywa są drogie, a jakie tanie?","Jaką sałatkę lubisz? Co w niej jest?"]}
 ]};

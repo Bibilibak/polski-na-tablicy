@@ -80,6 +80,14 @@ cwiczenia: [
   ]}}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Telefon do właściciela",
+ zasady:{r:[
+   ["Dzwonię w sprawie ogłoszenia.","**w sprawie** + **dopełniacz**","Dzwonię w sprawie mieszkani[[a]] na ulicy Długiej."],
+   ["Ile wynosi czynsz?","pytania: **Ile wynosi…? Czy … są wliczone?**","Czynsz wynosi dwa tysiące złotych."],
+   ["Co jest w okolicy?","**obok, blisko, naprzeciwko, koło** + **dopełniacz**","Blisko jest park. Naprzeciwko dom[[u]] jest sklep."],
+   ["pod, nad, przed, za, między","+ **narzędnik**","Przed blok[[iem]] jest parking. Za dom[[em]] jest ogród."],
+   ["Czy można mieszkać z psem?","**z** + **narzędnik**; **można** + bezokolicznik","Czy można mieszkać z ps[[em]]?"],
+   ["na którym piętrze?","**w, na, przy** + **miejscownik**","Mieszkanie jest na czwart[[ym]] piętrz[[e]], w blok[[u]] przy park[[u]]."]
+  ]},
  sytuacja:"Student z psem szuka mieszkania. Dzwoni do właściciela w sprawie ogłoszenia z internetu i umawia się na oglądanie.",
  role:[
   {kto:"Szukający mieszkania", zadania:["Powiedz, że dzwonisz w sprawie ogłoszenia.","Zapytaj o czynsz, media i kaucję.","Zapytaj o piętro, windę i okolicę.","Zapytaj, czy można mieszkać z psem.","Umów się na oglądanie."]},
@@ -101,6 +109,14 @@ cwiczenia: [
  ]},
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:[{z:"Dzwonię w sprawie ogłoszenia.",alt:["W sprawie ogłoszenia dzwonię."]},"Czy media są wliczone w czynsz?","Mieszkam w kamienicy w centrum.",{z:"Przystanek jest naprzeciwko szkoły.",alt:["Naprzeciwko szkoły jest przystanek."]},{z:"Kiedy mogę obejrzeć mieszkanie?",alt:["Kiedy mieszkanie mogę obejrzeć?"]},"Wszędzie dobrze, ale w domu najlepiej."]},
-{sekcja:"K", typ:"rozmowa", tytul:"Gdzie mieszkasz?", polecenie:"Losuj pytanie. Opisuj miejsce z przyimkami: *obok, naprzeciwko, blisko, za, przed…*",
+{sekcja:"K", typ:"rozmowa", tytul:"Gdzie mieszkasz?",
+ zasady:{r:[
+   ["w bloku, w kamienicy, w domu","**w / na** + **miejscownik**","Mieszkam w blok[[u]] / w kamienic[[y]] / w dom[[u]]."],
+   ["w centrum czy na przedmieściach?","miejscownik l. mn.: **-ach**","Wolę mieszkać na przedmieści[[ach]]."],
+   ["Co jest blisko? Co jest naprzeciwko?","**blisko, obok, naprzeciwko** + **dopełniacz**","Naprzeciwko mojego okn[[a]] jest szkoła."],
+   ["pod, nad, przed, za, między","+ **narzędnik**","Przed dom[[em]] jest przystanek."],
+   ["Mieszkasz sam czy z kimś?","**sam** (m.) / **sama** (ż.); **z** + **narzędnik**","Mieszkam z koleżank[[ą]] i z kot[[em]]."]
+  ],
+  uwaga:"Przyimki statyczne (gdzie?): **w, na, przy, o** + miejscownik · **obok, blisko, u** + dopełniacz · **nad, pod, przed, za** + narzędnik."}, polecenie:"Losuj pytanie. Opisuj miejsce z przyimkami: *obok, naprzeciwko, blisko, za, przed…*",
  pytania:["Mieszkasz w bloku, w kamienicy czy w domu?","Co jest blisko twojego domu?","Co jest naprzeciwko twojego okna?","Jakie jest twoje wymarzone mieszkanie?","Wolisz mieszkać w centrum czy na przedmieściach?","Ile kosztuje wynajem w twoim mieście?","Mieszkasz sam / sama czy z kimś?","Co musi mieć dobre mieszkanie?","Jak szukałeś / szukałaś mieszkania w Polsce?","Co znaczy przysłowie „Wszędzie dobrze, ale w domu najlepiej”?"]}
 ]};

@@ -108,6 +108,14 @@ cwiczenia: [
 {sekcja:"K", typ:"pary", tytul:"Okazja i życzenia",
  pary:[["urodziny","Sto lat!"],["Boże Narodzenie","Wesołych Świąt!"],["Nowy Rok","Szczęśliwego Nowego Roku!"],["egzamin","Powodzenia!"],["podróż","Miłej podróży!"],["dobra wiadomość","Gratulacje!"],["Wielkanoc","Smacznego jajka!"]]},
 {sekcja:"K", typ:"scenka", tytul:"Wywiad z dziadkiem",
+ zasady:{r:[
+   ["Kiedy się urodziłeś?","czasownik **dokonany** = jedno zdarzenie, rezultat","Urodził[[em]] się… Skończył[[em]] szkołę… Poznał[[em]] babcię…"],
+   ["Co robiłeś długo?","czasownik **niedokonany** = proces, coś trwało albo się powtarzało","Studiowałem pięć lat. Długo pracowałem w fabryce."],
+   ["W którym roku?","**w** + liczebnik porządkowy + **roku** (miejscownik)","w tysiąc dziewięćset sześćdziesiąt[[ym]] piąt[[ym]] roku"],
+   ["Kiedy? (data)","dzień: liczebnik porządkowy w **dopełniaczu** + miesiąc w **dopełniaczu**","Urodziłem się dwunast[[ego]] maj[[a]]."],
+   ["Wzięliśmy ślub…","*wziąć* nieregularny: wziął[[em]] / wzięł[[am]], wzięli[[śmy]]","Wzięliśmy ślub w lipcu."],
+   ["życzenia","**życzyć** + **celownik** (komu?) + **dopełniacz** (czego?)","Życzę dziadk[[owi]] zdrowi[[a]]! Wszystkiego najlepszego!"]
+  ]},
  sytuacja:"Wnuczka pisze do szkoły projekt „Historia mojej rodziny”. Robi wywiad z dziadkiem o jego życiu.",
  role:[
   {kto:"Wnuczka / wnuk", zadania:["Zapytaj, kiedy i gdzie dziadek się urodził.","Zapytaj o szkołę, studia i pierwszą pracę.","Zapytaj, kiedy poznał babcię i kiedy wzięli ślub.","Na końcu złóż dziadkowi życzenia (ma jutro urodziny!)."]},
@@ -125,6 +133,13 @@ cwiczenia: [
   ["Dziadek","Rok później, w lipcu siedemdziesiątego czwartego."],
   ["Wnuczka","Dziękuję! I wszystkiego najlepszego z okazji jutrzejszych urodzin! Sto lat!"]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Kiedy to było?", polecenie:"Losuj pytanie. Podaj datę i uważaj na aspekt.",
+{sekcja:"K", typ:"rozmowa", tytul:"Kiedy to było?",
+ zasady:{r:[
+   ["Kiedy się urodziłeś / urodziłaś?","data: porządkowy w **dopełniaczu** + miesiąc w **dopełniaczu**; rok: **w** … **roku**","Urodziłam się trzeci[[ego]] marc[[a]] w dwutysięcznym roku."],
+   ["Który dzisiaj jest?","*Który jest?* → **mianownik**; *Kiedy?* → **dopełniacz**","Dzisiaj jest trzec[[i]] listopada. / Urodziny mam trzeci[[ego]] listopada."],
+   ["Co zrobiłeś? Co robiłeś?","**dokonany** = rezultat (zrobiłem), **niedokonany** = proces (robiłem)","Wczoraj zrobił[[am]] zakupy. Długo czytał[[am]] książkę."],
+   ["pary aspektowe","robić → **z**robić · czytać → **prze**czytać · pisać → **na**pisać · zaczynać → zacząć · przyjeżdżać → przyjechać","Zaczęł[[am]] / Zaczął[[em]] uczyć się polskiego w zeszłym roku."],
+   ["Złóż życzenia","**życzyć** + celownik + dopełniacz; **z okazji** + dopełniacz","Wszystkiego najlepszego z okazji urodzin! Życzę ci szczęści[[a]]!"]
+  ]}, polecenie:"Losuj pytanie. Podaj datę i uważaj na aspekt.",
  pytania:["Kiedy się urodziłeś / urodziłaś?","W którym roku zacząłeś / zaczęłaś uczyć się polskiego?","Kiedy masz urodziny? A imieniny?","Kiedy pierwszy raz przyjechałeś / przyjechałaś do Polski?","Co zrobiłeś / zrobiłaś wczoraj? A co robiłeś / robiłaś długo?","Opowiedz biografię sławnej osoby z twojego kraju.","Jakie ważne święto jest w twoim kraju? Kiedy?","Złóż życzenia osobie obok: dzisiaj ma urodziny!","Jaki dzień w twoim życiu był najważniejszy?","Który dzisiaj jest?"]}
 ]};

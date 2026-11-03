@@ -37,6 +37,15 @@ cwiczenia: [
   {q:"Czy to daleko? – Nie, to pięć minut ___.",o:["pieszo","pieszy","piechota"]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Turysta pyta o drogę",
+ zasady:{r:[
+   ["Jak dojść do…?","**do** + **dopełniacz**; **na** + biernik (plac, rynek)","Jak dojść do dworc[[a]]? Jak dojść na Rynek?"],
+   ["prosto, w lewo, w prawo","**proszę** + bezokolicznik: grzeczna instrukcja","Proszę iść prosto, a potem skręcić w lewo."],
+   ["obok, naprzeciwko","**obok / naprzeciwko / koło** + **dopełniacz**","Obok kościoł[[a]] jest park. Naprzeciwko pomnik[[a]] jest kawiarnia."],
+   ["Czym jechać?","środek transportu: **narzędnik**","Proszę jechać tramwaj[[em]] albo autobus[[em]]."],
+   ["To … minut pieszo.","2–4 minut**y**, 5 i więcej minut (dopełniacz l. mn.)","To trzy minut[[y]]. To dziesięć minut pieszo."]
+  ],
+  uwaga:"*Iść* = pieszo, *jechać* = autobusem, tramwajem, samochodem."},
+
  sytuacja:"Turysta stoi przed dworcem w Krakowie i chce dojść na Rynek, a potem na Wawel. Pyta przechodnia o drogę.",
  role:[
   {kto:"Turysta", zadania:["Zaczepiaj grzecznie: *Przepraszam…*","Zapytaj, jak dojść na Rynek.","Zapytaj, czy to daleko.","Zapytaj, jak potem dojść na Wawel albo czym jechać.","Podziękuj."]},
@@ -105,6 +114,14 @@ cwiczenia: [
   {q:"Kocham ___! (ty)",o:["cię","ci","tobą"]},{q:"Czekam na ___. (on)",o:["niego","go","jego"]},
   {q:"Zapraszam ___ na obiad. (wy)",o:["was","wam","wami"]},{q:"Masz ten bilet? – Tak, mam ___.",o:["go","ją","je"]}
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Moje miasto", polecenie:"Losuj pytanie i odpowiadaj. Możesz pokazać drogę na mapie.",
+{sekcja:"K", typ:"rozmowa", tytul:"Moje miasto",
+ zasady:{r:[
+   ["Jak jeździsz do pracy?","**iść / jechać** = teraz, jeden raz; **chodzić / jeździć** = regularnie, często","Teraz idę do sklepu. Codziennie chodzę na spacer."],
+   ["odmiana","iść: id[[ę]], idzi[[esz]], id[[ą]] · chodzić: chodz[[ę]], chodz[[isz]] · jechać: jad[[ę]], jedzi[[esz]] · jeździć: jeżdż[[ę]], jeźdz[[isz]]","Jeżdżę do pracy tramwajem."],
+   ["Czym?","środek transportu: **narzędnik**","Jeżdżę autobus[[em]], tramwaj[[em]], rower[[em]]."],
+   ["Dokąd idziesz?","**do** + dopełniacz, **na** + biernik","Idę do dom[[u]], do sklep[[u]], na spacer."],
+   ["Co jest obok twojego domu?","**obok / blisko / naprzeciwko** + **dopełniacz**","Obok mojego dom[[u]] jest piekarnia."]
+  ]},
+ polecenie:"Losuj pytanie i odpowiadaj. Możesz pokazać drogę na mapie.",
  pytania:["Jak jeździsz do pracy albo do szkoły?","Jak często chodzisz na spacer?","Co jest obok twojego domu?","Jak dojść z twojego domu do najbliższego sklepu?","Dokąd idziesz po lekcji?","Jeździsz na rowerze po mieście?","Jakie zabytki są w twoim mieście?","Byłeś / byłaś w Krakowie? Co widziałeś / widziałaś?","Wolisz chodzić pieszo czy jeździć tramwajem?","Gdzie w twoim mieście jest najlepsza kawiarnia? Jak tam dojść?"]}
 ]};

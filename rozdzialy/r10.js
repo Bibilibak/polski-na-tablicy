@@ -42,6 +42,14 @@ cwiczenia: [
 {sekcja:"K", typ:"rozsypanka", tytul:"Ułóż zdania",
  zdania:["Czy ten stolik jest wolny?","Co pan poleca?",{z:"Na deser poproszę sernik.",alt:["Poproszę na deser sernik.","Poproszę sernik na deser."]},"Dla mnie kawa z mlekiem.","Poproszę rachunek.","Wszystko było bardzo smaczne."]},
 {sekcja:"K", typ:"scenka", tytul:"Obiad w polskiej restauracji",
+ zasady:{r:[
+   ["Poproszę kartę / rachunek.","*poprosić, zamówić* + **biernik**","Poproszę kart[[ę]]. Poproszę rachunek. Zamawiam zup[[ę]]."],
+   ["Nie jem mięsa.","**nie** + **dopełniacz**: m. **-a / -u**, ż. **-y / -i**, n. **-a**","Nie jem mięs[[a]]. Nie piję kaw[[y]]. Nie jem ser[[a]]."],
+   ["Co pan / pani poleca?","forma oficjalna: **pan / pani** + 3. osoba","Co pan polec[[a]]? Czy pani zamawi[[a]] deser?"],
+   ["Na pierwsze danie… Do picia…","**na** + biernik, **do** + dopełniacz (stałe zwroty)","Na pierwsze danie żurek, na drugie pierogi, do picia sok."]
+  ],
+  uwaga:"Biernik zmienia się w dopełniacz po przeczeniu: *Jem mięs[[o]].* → *Nie jem mięs[[a]].*"},
+
  sytuacja:"Turysta pierwszy raz je obiad w polskiej restauracji. Nie zna polskich dań i prosi kelnera o pomoc.",
  role:[
   {kto:"Klient", zadania:["Zapytaj, czy stolik jest wolny, i poproś o kartę.","Zapytaj, co kelner poleca i co to jest (np. żurek).","Zamów pierwsze i drugie danie, napój i deser.","Powiedz, czego nie jesz (np. *Nie jem mięsa*).","Poproś o rachunek."]},
@@ -60,7 +68,15 @@ cwiczenia: [
   ["Kelner","Czy smakowało?"],
   ["Klient","Wszystko było pyszne! Poproszę jeszcze sernik i rachunek."]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Rozmowa o jedzeniu", polecenie:"Losuj pytanie. Odpowiadaj i pytaj dalej.",
+{sekcja:"K", typ:"rozmowa", tytul:"Rozmowa o jedzeniu",
+ zasady:{r:[
+   ["Czego nie jesz?","**nie** + **dopełniacz**: m. **-a / -u**, ż. **-y / -i**, n. **-a**","Nie jem ryb[[y]], mięs[[a]], ser[[a]]."],
+   ["Jakie dania znasz? Co zamawiasz?","*znać, lubić, zamawiać* + **biernik**","Znam pierogi i żurek. Zamawiam kaw[[ę]] i szarlotk[[ę]]."],
+   ["Z kim chodzisz do restauracji?","**z** + zaimek w narzędniku: ze mną, z tobą, z nim, z nią, z nami, z wami, z nimi","Chodzę z nim / z nią / z przyjaciółmi."],
+   ["Wolisz… czy…?","*woleć* + bezokolicznik; **bo** + powód","Wolę jeść w domu, bo lubię gotować."]
+  ],
+  uwaga:"Przed *mną* mówimy **ze**: *ze mną*. Przy innych zaimkach jest **z**: *z tobą, z nim*."},
+ polecenie:"Losuj pytanie. Odpowiadaj i pytaj dalej.",
  pytania:["Jakie polskie dania znasz?","Które polskie danie lubisz najbardziej?","Czego nie jesz?","Jaki jest twój ulubiony deser?","Z kim chodzisz do restauracji?","Umiesz zrobić pierogi?","Jakie danie z twojego kraju polecasz?","Co zamawiasz w kawiarni?","Dajesz napiwek w restauracji?","Wolisz jeść w domu czy w restauracji?"]},
 {sekcja:"G", typ:"zasada", tytul:"Dopełniacz po przeczeniu",
  bloki:[

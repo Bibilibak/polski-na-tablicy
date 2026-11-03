@@ -33,9 +33,23 @@ cwiczenia: [
   {h:"Wyrażamy posiadanie: mieć"},
   {ex:["Mam rower. Masz samochód?","Mam gitarę, ale nie umiem grać.","Mamy dużo czasu! · Nie mam czasu."]}
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Pytania o czas wolny", polecenie:"Losuj pytanie i odpowiadaj pełnym zdaniem. Potem zapytaj kolegę albo koleżankę: *A ty?*",
+{sekcja:"K", typ:"rozmowa", tytul:"Pytania o czas wolny",
+ zasady:{r:[
+   ["Co lubisz robić?","*lubić, chcieć, móc, musieć, umieć* + **bezokolicznik**","Lubię czyt[[ać]]. Muszę sprząt[[ać]]."],
+   ["Co chcesz / możesz / musisz robić?","*móc*: mog[[ę]], moż[[esz]], mog[[ą]] · *chcieć*: chc[[ę]], chc[[esz]], chc[[ą]] · *musieć*: musz[[ę]], mus[[isz]], musz[[ą]]","Dziś wieczorem chcę obejrzeć film."],
+   ["Umiesz grać na…? Grasz w…?","**grać na** + instrument (miejscownik) · **grać w** + gra, sport (biernik)","Gram na gitarz[[e]]. Gram w piłk[[ę]] i w szachy."],
+   ["Jeździsz na rowerze?","**jeździć na** + miejscownik","Jeżdżę na rower[[ze]], na nart[[ach]]."],
+   ["w twoim mieście","**mój / twój**: mój (m.), moja (ż.), moje (n.)","Mój ulubiony sport to tenis. Moja pasja to muzyka."]
+  ]},
+ polecenie:"Losuj pytanie i odpowiadaj pełnym zdaniem. Potem zapytaj kolegę albo koleżankę: *A ty?*",
  pytania:["Co lubisz robić w weekend?","Co robisz, kiedy się nudzisz?","Umiesz grać na jakimś instrumencie?","Jaki sport lubisz?","Co musisz robić w domu?","Co chcesz robić dziś wieczorem?","Co możesz robić w twoim mieście w wolnym czasie?","Masz rower? Jeździsz na rowerze?","Wolisz czytać czy oglądać filmy?","Czego nie lubisz robić?","Grasz w gry komputerowe?","Co robisz w niedzielę rano?"]},
 {sekcja:"K", typ:"scenka", tytul:"Nudzę się!",
+ zasady:{r:[
+   ["Może…?","propozycja: **Może** + czasownik w formie *my*","Może ogląd[[amy]] film? Może gr[[amy]] w karty?"],
+   ["Chcesz…?","*chcieć* + **bezokolicznik**","Chcesz grać w karty? Chcesz iść do kina?"],
+   ["Nie chcę. Nie mogę. Muszę…","*chcieć, móc, musieć* + bezokolicznik","Nie mog[[ę]], muszę się uczyć."],
+   ["Dlaczego nie?","**bo** + powód","Nie chcę, bo jestem zmęczony / zmęczona."]
+  ]},
  sytuacja:"Deszczowa sobota. Dwie osoby mieszkają razem. Jedna się nudzi, druga proponuje różne zajęcia.",
  role:[
   {kto:"Osoba A: nudzę się", zadania:["Powiedz, że się nudzisz.","Odmawiaj: *Nie chcę… / Nie mogę… / Muszę…*","Na końcu zaproponuj coś swojego."]},

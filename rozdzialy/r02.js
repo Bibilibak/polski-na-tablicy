@@ -33,6 +33,13 @@ cwiczenia: [
   {z:"Teraz mieszkam w Krakowie.",alt:["Mieszkam teraz w Krakowie.","Mieszkam w Krakowie teraz."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Nowy kolega w akademiku",
+ zasady:{r:[
+   ["Cześć, jestem…","*być*: ja jest[[em]], ty jest[[eś]], on / ona jest","Jestem Ola. A ty jesteś Tomek?"],
+   ["Skąd jesteś? Jestem z…","**z** + **dopełniacz** (nazwa kraju albo miasta)","Jestem z Polsk[[i]], z Hiszpani[[i]], z Krakow[[a]]."],
+   ["Gdzie mieszkasz?","koniugacja **-m, -sz**: mieszk[[am]], mieszk[[asz]], mieszk[[a]]","Mieszkam w pokoju numer dwanaście."],
+   ["Jaki masz numer telefonu?","*mieć* (koniugacja -m, -sz): m[[am]], m[[asz]], m[[a]]","– Jaki m[[asz]] numer? – M[[am]] nowy numer…"]
+  ],
+  uwaga:"W pytaniu jest *ty*: *mieszk[[asz]], m[[asz]]*. W odpowiedzi jest *ja*: *mieszk[[am]], m[[am]]*."},
  sytuacja:"Akademik w Krakowie. Dwie osoby spotykają się w kuchni pierwszy raz.",
  role:[
   {kto:"Osoba A", zadania:["Przywitaj się i przedstaw.","Zapytaj, co słychać.","Zapytaj, skąd jest kolega / koleżanka.","Powiedz, skąd jesteś ty.","Zapytaj o numer telefonu."]},
@@ -67,7 +74,15 @@ cwiczenia: [
   ["Jaki masz numer telefonu?","601 222 333."],
   ["Jaki masz e-mail?","ewa@poczta.pl"]
  ]},
-{sekcja:"L", typ:"rozmowa", tytul:"Wywiad w parach", polecenie:"Losuj pytanie. Uczeń A pyta, uczeń B odpowiada (może wymyślić dane). Wszyscy zapisują odpowiedzi jak w formularzu.",
+{sekcja:"L", typ:"rozmowa", tytul:"Wywiad w parach",
+ zasady:{r:[
+   ["Jak masz na imię? Jak się nazywasz?","*mieć na imię* + imię; *nazywać się* + imię i nazwisko","Mam na imię Ewa. Nazywam się Ewa Kowalska."],
+   ["Skąd jesteś?","**z** + **dopełniacz**","Jestem z Niemiec, z Francj[[i]], z Warszaw[[y]]."],
+   ["Gdzie mieszkasz? Jaki masz adres?","koniugacja **-m, -sz**: mieszk[[am]], m[[am]]","Mieszkam w Krakowie. Mam adres: ulica Długa 5."],
+   ["Co słychać?","stałe odpowiedzi","Dobrze, dziękuję. / W porządku. / Nie najlepiej."]
+  ],
+  uwaga:"W pytaniu jest *ty*: *mieszk[[asz]], m[[asz]]*. W odpowiedzi jest *ja*: *mieszk[[am]], m[[am]]*."},
+ polecenie:"Losuj pytanie. Uczeń A pyta, uczeń B odpowiada (może wymyślić dane). Wszyscy zapisują odpowiedzi jak w formularzu.",
  pytania:["Jak masz na imię?","Jak się nazywasz?","Skąd jesteś?","Gdzie mieszkasz?","Jaki masz adres?","Jaki masz numer telefonu?","Jaki masz e-mail?","Co słychać?","Jak się pisze twoje nazwisko?"]},
 {sekcja:"G", typ:"zasada", tytul:"Zaimki osobowe i czasownik być",
  bloki:[

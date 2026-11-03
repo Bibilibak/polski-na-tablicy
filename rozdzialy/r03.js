@@ -33,6 +33,12 @@ cwiczenia: [
   {z:"To jest mały, biały kot.",alt:["To jest biały, mały kot."]}
  ]},
 {sekcja:"K", typ:"scenka", tytul:"Gra: Czy to jest…?",
+ zasady:{r:[
+   ["Czy to jest…?","pytanie: **czy** + zdanie","Czy to jest długopis? – Tak, to jest długopis. / Nie, to nie jest długopis."],
+   ["ten, ta, to","rodzaj rzeczownika: **ten** (m.), **ta** (ż.), **to** (n.)","ten długopis, ta książka, to okno"],
+   ["Czy to jest czerwone? Czy to jest duże?","przymiotnik ma rodzaj rzeczownika: **-y / -i** (m.), **-a** (ż.), **-e** (n.)","czerwon[[y]] zeszyt, czerwon[[a]] torba, czerwon[[e]] krzesło"]
+  ],
+  uwaga:"Kiedy nie wiemy, co to jest, pytamy w rodzaju nijakim: *Czy to jest duż[[e]]? Czy to jest czerwon[[e]]?*"},
  sytuacja:"Jedna osoba wybiera rzecz w swoim pokoju albo w klasie i nic nie mówi. Inni zadają pytania „Czy to jest…?”. Kto zgadnie, wybiera następną rzecz.",
  role:[
   {kto:"Osoba, która wybiera", zadania:["Wybierz rzecz (nie mów jaką!).","Odpowiadaj tylko: *Tak, to jest…* albo *Nie, to nie jest…*","Możesz dać wskazówkę: kolor albo „duży / mały”."]},
@@ -48,7 +54,13 @@ cwiczenia: [
   ["Uczeń B","Czy to jest długopis?"],
   ["Uczeń A","Tak! To jest niebieski długopis. Brawo!"]
  ]},
-{sekcja:"K", typ:"rozmowa", tytul:"Pokaż i powiedz", polecenie:"Losuj kartę. Uczeń szuka rzeczy w domu, pokazuje ją przed kamerą i mówi: *To jest…*",
+{sekcja:"K", typ:"rozmowa", tytul:"Pokaż i powiedz",
+ zasady:{r:[
+   ["Pokaż coś czerwonego.","*coś* + przymiotnik z końcówką **-ego**","coś czerwon[[ego]], coś mał[[ego]], coś now[[ego]]"],
+   ["Co to jest?","**To jest** + przymiotnik + rzeczownik","To jest czerwon[[y]] długopis. To jest mał[[a]] książka."],
+   ["Jaki? Jaka? Jakie?","przymiotnik ma rodzaj rzeczownika: **-y / -i** (m.), **-a** (ż.), **-e** (n.)","now[[y]] zeszyt, now[[a]] torba, now[[e]] krzesło"]
+  ]},
+ polecenie:"Losuj kartę. Uczeń szuka rzeczy w domu, pokazuje ją przed kamerą i mówi: *To jest…*",
  pytania:["Pokaż coś czerwonego.","Pokaż coś małego.","Pokaż coś niebieskiego.","Pokaż coś dużego.","Pokaż coś nowego.","Pokaż coś starego.","Pokaż coś zielonego.","Pokaż coś białego.","Pokaż coś czarnego.","Pokaż coś ładnego.","Pokaż coś żółtego.","Pokaż coś do pisania."]},
 {sekcja:"L", typ:"fiszki", tytul:"Rzeczy w klasie",
  karty:[
